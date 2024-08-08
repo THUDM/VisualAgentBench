@@ -1,0 +1,24 @@
+import: definition.yaml
+
+concurrency:
+  task:
+    # css-std: 5
+    omnigibson-std: 6
+    # minecraft-std: 6
+  agent:
+    # gpt-3.5-turbo-0613: 1   # use this
+    gpt-4o-2024-05-13: 6
+
+assignments: # List[Assignment] | Assignment
+  - agent: # "task": List[str] | str ,  "agent": List[str] | str
+      # - gpt-3.5-turbo-0613
+      - gpt-4o-2024-05-13
+    task:
+      # - css-std
+      - omnigibson-std
+      # - minecraft-std
+
+# output: "outputs/{TIMESTAMP}"
+# output: "outputs/css_test"
+output: "outputs/omnigibson"
+# output: "outputs/minecraft"

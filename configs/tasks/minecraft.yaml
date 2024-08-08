@@ -1,0 +1,33 @@
+minecraft-std:
+  module: "src.server.tasks.minecraft.Minecraft"
+  parameters:
+    name: "Minecraft-std"
+    max_round: 100
+    available_ports:
+      - 11000
+      - 11001
+      - 11002
+      - 11003
+      - 11004
+      - 11005
+      - 11006
+      - 11007
+      - 11008
+      - 11009
+      - 11010
+      - 11011
+      - 11012
+      - 11013
+      - 11014
+      - 11015
+    available_devices:
+      "0": 2
+      "1": 2
+      "2": 2
+      "3": 2
+      "4": 2
+      "5": 2
+      "6": 2
+      "7": 2
+    data_dir: "data/minecraft"
+    output_dir: "outputs/minecraft"

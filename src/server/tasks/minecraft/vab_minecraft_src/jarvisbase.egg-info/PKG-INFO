@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jarvisbase
+Version: 0.0.1
+Summary: JarvisBase Library
+Author-email: CraftJarvis <craftjarvis@outlook.com>
+Requires-Dist: av==11.0.0
+Requires-Dist: torch==2.2.1
+Requires-Dist: torchvision==0.17.1
+Requires-Dist: rich==13.7.1
+Requires-Dist: pyyaml==6.0.1
+Requires-Dist: gymnasium==0.29.1
+Requires-Dist: hydra-core==1.3.2
+Requires-Dist: gym==0.23.1
+Requires-Dist: attrs==23.2.0
+Requires-Dist: gym3==0.3.3

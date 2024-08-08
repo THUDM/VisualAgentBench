@@ -1,0 +1,799 @@
+[
+    {
+      "group": "train",
+      "task": "bookshelf",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:rabbit_hide": 64,
+          "minecraft:book": 2,
+          "minecraft:sugar_cane": 2
+        }
+      },
+      "task_obj": {
+        "bookshelf": 1
+      },
+      "init_command": [
+        "cow",
+        "rabbit",
+        "water",
+        "sugar_cane"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "lantern",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:iron_ore": 3,
+          "minecraft:charcoal": 16
+        }
+      },
+      "task_obj": {
+        "lantern": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "torch",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "torch": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "apple",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "apple": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "campfire",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "campfire": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "white_carpet",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "white_carpet": 1
+      },
+      "init_command": [
+        "sheep"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "oak_stairs",
+      "step_rewards": {},
+      "env": {
+        "biome": "oak_forest",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "oak_stairs": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "iron_axe",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+            "minecraft:iron_ore": 8,
+            "minecraft:cobblestone": 16
+        }
+      },
+      "task_obj": {
+        "iron_axe": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "iron_block",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+            "minecraft:iron_ore": 9,
+            "minecraft:cobblestone": 16
+        }
+      },
+      "task_obj": {
+        "iron_block": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "lever",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "lever": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "jungle_logs",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "jungle_logs": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "coal_block",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:coal": 8
+        }
+      },
+      "task_obj": {
+        "coal_block": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "cut_sandstone",
+      "step_rewards": {},
+      "env": {
+        "biome": "desert",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:sand": 13
+        }
+      },
+      "task_obj": {
+        "cut_sandstone": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "sandstone_wall",
+      "step_rewards": {},
+      "env": {
+        "biome": "desert",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:sand": 23
+        }
+      },
+      "task_obj": {
+        "sandstone_wall": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "cobblestone_wall",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:wooden_pickaxe": 1
+        }
+      },
+      "task_obj": {
+        "cobblestone_wall": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "gravel",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:wooden_pickaxe": 1
+        }
+      },
+      "task_obj": {
+        "gravel": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "stone_bricks",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "stone_bricks": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "glass_pane",
+      "step_rewards": {},
+      "env": {
+        "biome": "desert",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:furnace": 1,
+          "minecraft:sand": 1,
+          "minecraft:oak_log": 64
+        }
+      },
+      "task_obj": {
+        "glass_pane": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "furnace_minecart",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:oak_log": 64,
+          "minecraft:iron_pickaxe": 1,
+          "minecraft:furnace": 1,
+          "minecraft:iron_ore": 8
+        }
+      },
+      "task_obj": {
+        "furnace_minecart": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "stone_stairs",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "stone_stairs": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "blackstone_wall",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:stone_pickaxe": 1
+        }
+      },
+      "task_obj": {
+        "blackstone_wall": 1
+      },
+      "init_command": [
+        "blackstone",
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "stonecutter",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:stone": 3,
+          "minecraft:iron_pickaxe": 1,
+          "minecraft:oak_log": 64,
+          "minecraft:cobblestone": 16,
+          "minecraft:iron_ore": 8
+        }
+      },
+      "task_obj": {
+        "stonecutter": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "stripped_oak_wood",
+      "step_rewards": {},
+      "env": {
+        "biome": "oak_forest",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "stripped_oak_wood": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "stone_slab",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:stone": 2,
+          "minecraft:furnace": 1
+        }
+      },
+      "task_obj": {
+        "stone_slab": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "cut_sandstone_slab",
+      "step_rewards": {},
+      "env": {
+        "biome": "desert",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:sand": 10
+        }
+      },
+      "task_obj": {
+        "cut_sandstone_slab": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "stone_button",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "stone_button": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "stripped_birch_log",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "stripped_birch_log": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "light_weighted_pressure_plate",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:oak_log": 64,
+          "minecraft:iron_pickaxe": 1,
+          "minecraft:gold_ores": 2
+        }
+      },
+      "task_obj": {
+        "light_weighted_pressure_plate": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "stripped_dark_oak_log",
+      "step_rewards": {},
+      "env": {
+        "biome": "oak_forest",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "stripped_dark_oak_log": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "stripped_birch_wood",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "stripped_birch_wood": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "grindstone",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "grindstone": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "blast_furnace",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:oak_log": 64,
+          "minecraft:iron_pickaxe": 1,
+          "minecraft:cobblestone": 64,
+          "minecraft:iron_ore": 8
+        }
+      },
+      "task_obj": {
+        "blast_furnace": 1
+      },
+      "init_command": [
+        "bamboo"
+      ]
+    },
+    {
+      "group": "train",
+      "task": "birch_stairs",
+      "step_rewards": {},
+      "env": {
+        "biome": "birch_forest",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "birch_stairs": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "birch_pressure_plate",
+      "step_rewards": {},
+      "env": {
+        "biome": "birch_forest",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "birch_pressure_plate": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "dark_oak_stairs",
+      "step_rewards": {},
+      "env": {
+        "biome": "oak_forest",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "dark_oak_stairs": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "dark_oak_boat",
+      "step_rewards": {},
+      "env": {
+        "biome": "oak_forest",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "dark_oak_boat": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "dark_oak_pressure_plate",
+      "step_rewards": {},
+      "env": {
+        "biome": "oak_forest",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "dark_oak_pressure_plate": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "jungle_pressure_plate",
+      "step_rewards": {},
+      "env": {
+        "biome": "jungle",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "jungle_pressure_plate": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "stripped_jungle_wood",
+      "step_rewards": {},
+      "env": {
+        "biome": "jungle",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "stripped_jungle_wood": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "stripped_acacia_wood",
+      "step_rewards": {},
+      "env": {
+        "biome": "savanna",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "stripped_acacia_wood": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "acacia_stairs",
+      "step_rewards": {},
+      "env": {
+        "biome": "savanna",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "acacia_stairs": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "acacia_pressure_plate",
+      "step_rewards": {},
+      "env": {
+        "biome": "savanna",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "acacia_pressure_plate": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "sandstone_stairs",
+      "step_rewards": {},
+      "env": {
+        "biome": "desert",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:oak_log": 64,
+          "minecraft:sand": 21
+        }
+      },
+      "task_obj": {
+        "sandstone_stairs": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "smooth_sandstone_stairs",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:oak_log": 64,
+          "minecraft:sand": 64,
+          "minecraft:smooth_sandstone": 5
+        }
+      },
+      "task_obj": {
+        "smooth_sandstone_stairs": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "sandstone_slab",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:oak_log": 16,
+          "minecraft:sand": 64,
+          "minecraft:smooth_sandstone": 5
+        }
+      },
+      "task_obj": {
+        "sandstone_slab": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "clay_ball",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "clay_ball": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "clay",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {}
+      },
+      "task_obj": {
+        "clay": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "wet_sponge",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:sponge": 1
+        }
+      },
+      "task_obj": {
+        "wet_sponge": 1
+      },
+      "init_command": []
+    },
+    {
+      "group": "train",
+      "task": "sponge",
+      "step_rewards": {},
+      "env": {
+        "biome": "plains",
+        "mobs": [],
+        "init_inventory": {
+          "minecraft:wet_sponge": 1
+        }
+      },
+      "task_obj": {
+        "sponge": 1
+      },
+      "init_command": [
+        "water"
+      ]
+    }
+]

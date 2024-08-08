@@ -1,0 +1,2496 @@
+[
+  {
+    "group": "food",
+    "task": "cake",
+    "step_rewards": {
+      "minecraft:sugar": 0.07838851370868156,
+      "minecraft:honey_bottle": 0.05963216278826088,
+      "minecraft:glass_bottle": 0.04266930228476311,
+      "minecraft:glass": 0.027714524805271683,
+      "minecraft:sand": 0.0053336627855953885,
+      "minecraft:furnace": 0.015085876497027324,
+      "minecraft:stone_crafting_materials": 0.0053336627855953885,
+      "minecraft:sugar_cane": 0.0053336627855953885,
+      "minecraft:milk_bucket": 0.1440088952110755,
+      "minecraft:iron_ingot": 0.09878081715435792,
+      "minecraft:iron_ore": 0.07838851370868156,
+      "minecraft:stone_pickaxe": 0.05963216278826088,
+      "minecraft:stick": 0.015085876497027324,
+      "minecraft:planks": 0.0053336627855953885,
+      "minecraft:bamboo": 0.0053336627855953885,
+      "minecraft:stone_tool_materials": 0.04266930228476311,
+      "minecraft:wooden_pickaxe": 0.027714524805271683,
+      "minecraft:wheat": 0.0053336627855953885,
+      "minecraft:egg": 0.0053336627855953885
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:bucket": 3
+      }
+    },
+    "task_obj": {
+      "minecraft:cake": 1
+    },
+    "init_command": [
+      "cow",
+      "water",
+      "sugar_cane",
+      "chicken",
+      "egg",
+      "wheat"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "sugar",
+    "step_rewards": {
+      "minecraft:honey_bottle": 0.23193358724695762,
+      "minecraft:glass_bottle": 0.16595816555186416,
+      "minecraft:glass": 0.10779299050003341,
+      "minecraft:sand": 0.02074477069398302,
+      "minecraft:furnace": 0.05867507212750143,
+      "minecraft:stone_crafting_materials": 0.02074477069398302,
+      "minecraft:sugar_cane": 0.02074477069398302
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:sugar": 1
+    },
+    "init_command": [
+      "water",
+      "sugar_cane"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "glass_bottle",
+    "step_rewards": {
+      "minecraft:glass": 0.2882814774695222,
+      "minecraft:sand": 0.05547979620647056,
+      "minecraft:furnace": 0.15692056046577213,
+      "minecraft:stone_crafting_materials": 0.05547979620647056
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:glass_bottle": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "glass",
+    "step_rewards": {
+      "minecraft:sand": 0.1071992080366076,
+      "minecraft:furnace": 0.3032051477620507,
+      "minecraft:stone_crafting_materials": 0.1071992080366076
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:glass": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "sand",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:sand": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "furnace",
+    "step_rewards": {
+      "minecraft:stone_crafting_materials": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:furnace": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "stone_crafting_materials",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stone_crafting_materials": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "sugar_cane",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:sugar_cane": 1
+    },
+    "init_command": [
+      "water",
+      "sugar_cane"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "milk_bucket",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.22106869320139577,
+      "minecraft:furnace": 0.03376176771026387,
+      "minecraft:stone_crafting_materials": 0.011936587446386298,
+      "minecraft:iron_ore": 0.1754312910825461,
+      "minecraft:stick": 0.03376176771026387,
+      "minecraft:planks": 0.011936587446386298,
+      "minecraft:bamboo": 0.011936587446386298,
+      "minecraft:stone_tool_materials": 0.09549269957109038,
+      "minecraft:wooden_pickaxe": 0.062024327778389725
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:milk_bucket": 1
+    },
+    "init_command": [
+      "cow"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "bucket",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.17794429501767378,
+      "minecraft:furnace": 0.02717577901580247,
+      "minecraft:stone_crafting_materials": 0.009608088813050503,
+      "minecraft:iron_ore": 0.14120948997190205,
+      "minecraft:stone_pickaxe": 0.10742169859918096,
+      "minecraft:stick": 0.02717577901580247,
+      "minecraft:planks": 0.009608088813050503,
+      "minecraft:bamboo": 0.009608088813050503,
+      "minecraft:stone_tool_materials": 0.07686471050440402,
+      "minecraft:wooden_pickaxe": 0.04992509396351285
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:bucket": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "iron_ingot",
+    "step_rewards": {
+      "minecraft:furnace": 0.036234611706530855,
+      "minecraft:stone_crafting_materials": 0.012810869825674713,
+      "minecraft:iron_ore": 0.18828056540472438,
+      "minecraft:stone_pickaxe": 0.1432298789055477,
+      "minecraft:stick": 0.036234611706530855,
+      "minecraft:planks": 0.012810869825674713,
+      "minecraft:bamboo": 0.012810869825674713,
+      "minecraft:stone_tool_materials": 0.10248695860539771,
+      "minecraft:wooden_pickaxe": 0.06656723228165895
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:iron_ingot": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "iron_ore",
+    "step_rewards": {
+      "minecraft:stone_pickaxe": 0.2108171671744983,
+      "minecraft:stick": 0.05333299345087188,
+      "minecraft:planks": 0.018856060665044617,
+      "minecraft:bamboo": 0.018856060665044617,
+      "minecraft:stone_tool_materials": 0.15084848532035694,
+      "minecraft:wooden_pickaxe": 0.09797896530737482
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:iron_ore": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "stone_pickaxe",
+    "step_rewards": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stone_pickaxe": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "stick",
+    "step_rewards": {
+      "minecraft:planks": 0.25,
+      "minecraft:bamboo": 0.25
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stick": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "planks",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:planks": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "bamboo",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:bamboo": 1
+    },
+    "init_command": [
+      "bamboo"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "stone_tool_materials",
+    "step_rewards": {
+      "minecraft:wooden_pickaxe": 0.2731283711025476,
+      "minecraft:planks": 0.05256357952645996,
+      "minecraft:stick": 0.14867225410639284,
+      "minecraft:bamboo": 0.05256357952645996
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stone_tool_materials": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "wooden_pickaxe",
+    "step_rewards": {
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:wooden_pickaxe": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "bread",
+    "step_rewards": {
+      "minecraft:wheat": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:bread": 1
+    },
+    "init_command": [
+      "water",
+      "wheat"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "egg",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:egg": 1
+    },
+    "init_command": [
+      "chicken",
+      "egg"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "rabbit_stew",
+    "step_rewards": {
+      "minecraft:bowl": 0.18789414702185403,
+      "minecraft:planks": 0.06643061275220756,
+      "minecraft:carrot": 0.06643061275220756,
+      "minecraft:cooked_rabbit": 0.18789414702185403,
+      "minecraft:baked_potato": 0.18789414702185403,
+      "minecraft:potato": 0.06643061275220756
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:brown_mushroom": 16,
+        "minecraft:red_mushroom": 16,
+        "minecraft:oak_log": 8
+      }
+    },
+    "task_obj": {
+      "minecraft:rabbit_stew": 1
+    },
+    "init_command": [
+      "carrots",
+      "potatoes",
+      "rabbit"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "bowl",
+    "step_rewards": {
+      "minecraft:planks": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:bowl": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "food",
+    "task": "carrot",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:carrot": 1
+    },
+    "init_command": [
+      "carrots"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "cooked_rabbit",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:cooked_rabbit": 1
+    },
+    "init_command": [
+      "rabbit"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "baked_potato",
+    "step_rewards": {
+      "minecraft:potato": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:baked_potato": 1
+    },
+    "init_command": [
+      "potatoes"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "potato",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:potato": 1
+    },
+    "init_command": [
+      "potatoes"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "fishing_rod",
+    "step_rewards": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:string": 0.09682016321769554
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:fishing_rod": 1
+    },
+    "init_command": [
+      "spider"
+    ]
+  },
+  {
+    "group": "food",
+    "task": "string",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:string": 1
+    },
+    "init_command": [
+      "spider"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "painting",
+    "step_rewards": {
+      "minecraft:wool": 0.09682016321769554,
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:bamboo": 0.09682016321769554
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:painting": 1
+    },
+    "init_command": [
+      "sheep"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "wool",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:wool": 1
+    },
+    "init_command": [
+      "spider"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "shears",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.17794429501767378,
+      "minecraft:furnace": 0.02717577901580247,
+      "minecraft:stone_crafting_materials": 0.009608088813050503,
+      "minecraft:iron_ore": 0.14120948997190205,
+      "minecraft:stone_pickaxe": 0.10742169859918096,
+      "minecraft:stick": 0.02717577901580247,
+      "minecraft:planks": 0.009608088813050503,
+      "minecraft:bamboo": 0.009608088813050503,
+      "minecraft:stone_tool_materials": 0.07686471050440402,
+      "minecraft:wooden_pickaxe": 0.04992509396351285
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 8
+      }
+    },
+    "task_obj": {
+      "minecraft:shears": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "light_gray_bed",
+    "step_rewards": {
+      "minecraft:light_gray_dye": 0.07389967079571173,
+      "minecraft:white_dye": 0.03434546331384026,
+      "minecraft:lily_of_the_valley": 0.006609787496562695,
+      "minecraft:bone_meal": 0.018695302244086144,
+      "minecraft:bone": 0.006609787496562695,
+      "minecraft:gray_dye": 0.05287829997250156,
+      "minecraft:black_dye": 0.018695302244086144,
+      "minecraft:white_tulip": 0.006609787496562695,
+      "minecraft:oxeye_daisy": 0.006609787496562695,
+      "minecraft:azure_bluet": 0.006609787496562695,
+      "minecraft:planks": 0.006609787496562695,
+      "minecraft:light_gray_wool": 0.09714364004884096,
+      "minecraft:white_wool": 0.018695302244086144,
+      "minecraft:string": 0.006609787496562695,
+      "minecraft:white_bed": 0.03434546331384026
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:wither_rose": 64,
+        "minecraft:ink_sac": 8
+      }
+    },
+    "task_obj": {
+      "minecraft:light_gray_bed": 1
+    },
+    "init_command": [
+      "sheep",
+      "spider",
+      "skeleton"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "light_gray_dye",
+    "step_rewards": {
+      "minecraft:white_dye": 0.1057296327705047,
+      "minecraft:lily_of_the_valley": 0.020347677313790388,
+      "minecraft:bone_meal": 0.057551922439907435,
+      "minecraft:bone": 0.020347677313790388,
+      "minecraft:gray_dye": 0.1627814185103231,
+      "minecraft:black_dye": 0.057551922439907435,
+      "minecraft:white_tulip": 0.020347677313790388,
+      "minecraft:oxeye_daisy": 0.020347677313790388,
+      "minecraft:azure_bluet": 0.020347677313790388
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:wither_rose": 64,
+        "minecraft:ink_sac": 8
+      }
+    },
+    "task_obj": {
+      "minecraft:light_gray_dye": 1
+    },
+    "init_command": [
+      "skeleton"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "white_dye",
+    "step_rewards": {
+      "minecraft:lily_of_the_valley": 0.1071992080366076,
+      "minecraft:bone_meal": 0.3032051477620507,
+      "minecraft:bone": 0.1071992080366076
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:white_dye": 1
+    },
+    "init_command": [
+      "lily_of_the_valley",
+      "skeleton"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "red_dye",
+    "step_rewards": {
+      "minecraft:red_tulip": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:red_dye": 1
+    },
+    "init_command": [
+      "red_tulip"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "bone_meal",
+    "step_rewards": {
+      "minecraft:bone": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:bone_meal": 1
+    },
+    "init_command": [
+      "skeleton"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "bone_block",
+    "step_rewards": {
+      "minecraft:bone_meal": 0.33961119937546275,
+      "minecraft:bone": 0.12007069102264314
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:bone_block": 1
+    },
+    "init_command": [
+      "skeleton"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "gray_dye",
+    "step_rewards": {
+      "minecraft:black_dye": 0.13949964600878748,
+      "minecraft:white_dye": 0.25627721401530695,
+      "minecraft:lily_of_the_valley": 0.04932057283296827,
+      "minecraft:bone_meal": 0.13949964600878748,
+      "minecraft:bone": 0.04932057283296827
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:wither_rose": 64,
+        "minecraft:ink_sac": 8
+      }
+    },
+    "task_obj": {
+      "minecraft:gray_dye": 1
+    },
+    "init_command": [
+      "skeleton"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "black_dye",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:wither_rose": 64,
+        "minecraft:ink_sac": 8
+      }
+    },
+    "task_obj": {
+      "minecraft:black_dye": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "orange_dye",
+    "step_rewards": {
+      "minecraft:orange_tulip": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:orange_dye": 1
+    },
+    "init_command": [
+      "orange_tulip"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "oxeye_daisy",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:oxeye_daisy": 1
+    },
+    "init_command": [
+      "oxeye_daisy"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "azure_bluet",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:azure_bluet": 1
+    },
+    "init_command": [
+      "azure_bluet"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "light_gray_wool",
+    "step_rewards": {
+      "minecraft:light_gray_dye": 0.15991173478532542,
+      "minecraft:white_dye": 0.0743202582824043,
+      "minecraft:lily_of_the_valley": 0.014302940375196213,
+      "minecraft:bone_meal": 0.04045482452083242,
+      "minecraft:bone": 0.014302940375196213,
+      "minecraft:gray_dye": 0.1144235230015697,
+      "minecraft:black_dye": 0.04045482452083242,
+      "minecraft:white_tulip": 0.014302940375196213,
+      "minecraft:oxeye_daisy": 0.014302940375196213,
+      "minecraft:azure_bluet": 0.014302940375196213,
+      "minecraft:white_wool": 0.04045482452083242,
+      "minecraft:string": 0.014302940375196213
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:wither_rose": 8,
+        "minecraft:ink_sac": 8
+      }
+    },
+    "task_obj": {
+      "minecraft:light_gray_wool": 1
+    },
+    "init_command": [
+      "sheep",
+      "lily_of_the_valley",
+      "spider",
+      "skeleton"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "white_wool",
+    "step_rewards": {
+      "minecraft:string": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:white_wool": 1
+    },
+    "init_command": [
+      "spider",
+      "sheep"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "white_bed",
+    "step_rewards": {
+      "minecraft:planks": 0.1071992080366076,
+      "minecraft:white_wool": 0.3032051477620507,
+      "minecraft:string": 0.1071992080366076
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:white_bed": 1
+    },
+    "init_command": [
+      "spider",
+      "sheep"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "ender_chest",
+    "step_rewards": {
+      "minecraft:ender_eye": 0.015531177162717258,
+      "minecraft:blaze_powder": 0.008454102034094281,
+      "minecraft:ender_pearl": 0.0029889764385755257,
+      "minecraft:obsidian": 0.12424941730173807,
+      "minecraft:diamond_pickaxe": 0.10904644689364561,
+      "minecraft:stick": 0.008454102034094281,
+      "minecraft:planks": 0.0029889764385755257,
+      "minecraft:bamboo": 0.0029889764385755257,
+      "minecraft:diamond": 0.09451973418477028,
+      "minecraft:diamond_ore": 0.08070236384153918,
+      "minecraft:iron_pickaxe": 0.06763281627275425,
+      "minecraft:iron_ingot": 0.05535661831771658,
+      "minecraft:furnace": 0.008454102034094281,
+      "minecraft:stone_crafting_materials": 0.0029889764385755257,
+      "minecraft:iron_ore": 0.043928802766268066,
+      "minecraft:stone_pickaxe": 0.0334177724990005,
+      "minecraft:stone_tool_materials": 0.023911811508604205,
+      "minecraft:wooden_pickaxe": 0.015531177162717258
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:cobblestone": 64,
+        "minecraft:blaze_rod": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:ender_chest": 1
+    },
+    "init_command": [
+      "enderman",
+      "obsidian"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "ender_eye",
+    "step_rewards": {
+      "minecraft:blaze_powder": 0.33961119937546275,
+      "minecraft:ender_pearl": 0.12007069102264314
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:blaze_rod": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:ender_eye": 1
+    },
+    "init_command": [
+      "enderman"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "blaze_powder",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:blaze_rod": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:blaze_powder": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "ender_pearl",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:ender_pearl": 1
+    },
+    "init_command": [
+      "enderman"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "obsidian",
+    "step_rewards": {
+      "minecraft:diamond_pickaxe": 0.13439062002176763,
+      "minecraft:stick": 0.010418973258223819,
+      "minecraft:planks": 0.0036836633219456804,
+      "minecraft:bamboo": 0.0036836633219456804,
+      "minecraft:diamond": 0.11648766230570463,
+      "minecraft:diamond_ore": 0.09945890969253336,
+      "minecraft:iron_pickaxe": 0.08335178606579055,
+      "minecraft:iron_ingot": 0.0682223994449083,
+      "minecraft:furnace": 0.010418973258223819,
+      "minecraft:stone_crafting_materials": 0.0036836633219456804,
+      "minecraft:iron_ore": 0.05413857313783531,
+      "minecraft:stone_pickaxe": 0.04118460797046617,
+      "minecraft:stone_tool_materials": 0.029469306575565443,
+      "minecraft:wooden_pickaxe": 0.019140876094763604
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:cobblestone": 64,
+        "iron_pickaxe": 2
+      }
+    },
+    "task_obj": {
+      "minecraft:obsidian": 1
+    },
+    "init_command": [
+      "obsidian"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "diamond_pickaxe",
+    "step_rewards": {
+      "minecraft:stick": 0.014949241753874454,
+      "minecraft:planks": 0.005285355108880852,
+      "minecraft:bamboo": 0.005285355108880852,
+      "minecraft:diamond": 0.1671376038687073,
+      "minecraft:diamond_ore": 0.142704587939783,
+      "minecraft:iron_ingot": 0.09788614646134414,
+      "minecraft:furnace": 0.014949241753874454,
+      "minecraft:stone_crafting_materials": 0.005285355108880852,
+      "minecraft:iron_ore": 0.07767853875702188,
+      "minecraft:stone_pickaxe": 0.05909206654341694,
+      "minecraft:stone_tool_materials": 0.04228284087104681,
+      "minecraft:wooden_pickaxe": 0.027463510753876114
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:cobblestone": 64,
+        "minecraft:iron_pickaxe": 2
+      }
+    },
+    "task_obj": {
+      "minecraft:diamond_pickaxe": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "diamond",
+    "step_rewards": {
+      "minecraft:diamond_ore": 0.15294433527179316,
+      "minecraft:iron_pickaxe": 0.12817537969156007,
+      "minecraft:iron_ingot": 0.10490995292432384,
+      "minecraft:furnace": 0.016021922461445008,
+      "minecraft:stone_crafting_materials": 0.005664605010066413,
+      "minecraft:iron_ore": 0.08325235121445529,
+      "minecraft:stone_pickaxe": 0.0633322093409719,
+      "minecraft:stick": 0.016021922461445008,
+      "minecraft:planks": 0.005664605010066413,
+      "minecraft:bamboo": 0.005664605010066413,
+      "minecraft:stone_tool_materials": 0.0453168400805313,
+      "minecraft:wooden_pickaxe": 0.029434151046732717
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:diamond": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "iron_pickaxe",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.17005510591722747,
+      "minecraft:furnace": 0.025970936457706904,
+      "minecraft:stone_crafting_materials": 0.009182112641504741,
+      "minecraft:iron_ore": 0.1349489443946737,
+      "minecraft:stone_pickaxe": 0.10265914021732381,
+      "minecraft:stick": 0.025970936457706904,
+      "minecraft:planks": 0.009182112641504741,
+      "minecraft:bamboo": 0.009182112641504741,
+      "minecraft:stone_tool_materials": 0.07345690113203793,
+      "minecraft:wooden_pickaxe": 0.04771165684772006
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:iron_pickaxe": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "flower_banner_pattern",
+    "step_rewards": {
+      "minecraft:oxeye_daisy": 0.1071992080366076,
+      "minecraft:paper": 0.3032051477620507,
+      "minecraft:sugar_cane": 0.1071992080366076
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:flower_banner_pattern": 1
+    },
+    "init_command": [
+      "water",
+      "oxeye_daisy",
+      "sugar_cane"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "paper",
+    "step_rewards": {
+      "minecraft:sugar_cane": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:paper": 1
+    },
+    "init_command": [
+      "water",
+      "sugar_cane"
+    ]
+  },
+  {
+    "group": "furniture",
+    "task": "iron_trapdoor",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.17794429501767378,
+      "minecraft:furnace": 0.02717577901580247,
+      "minecraft:stone_crafting_materials": 0.009608088813050503,
+      "minecraft:iron_ore": 0.14120948997190205,
+      "minecraft:stone_pickaxe": 0.10742169859918096,
+      "minecraft:stick": 0.02717577901580247,
+      "minecraft:planks": 0.009608088813050503,
+      "minecraft:bamboo": 0.009608088813050503,
+      "minecraft:stone_tool_materials": 0.07686471050440402,
+      "minecraft:wooden_pickaxe": 0.04992509396351285
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:iron_trapdoor": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "oak_fence_gate",
+    "step_rewards": {
+      "minecraft:stick": 0.2149774612617083,
+      "minecraft:planks": 0.07600601033021114,
+      "minecraft:bamboo": 0.07600601033021114,
+      "minecraft:oak_planks": 0.2149774612617083,
+      "minecraft:oak_logs": 0.07600601033021114
+    },
+    "env": {
+      "biome": "oak_forest",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:oak_fence_gate": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "oak_planks",
+    "step_rewards": {
+      "minecraft:oak_logs": 0.3333333333333333
+    },
+    "env": {
+      "biome": "oak_forest",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:oak_planks": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "oak_logs",
+    "step_rewards": {},
+    "env": {
+      "biome": "oak_forest",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:oak_logs": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "furniture",
+    "task": "oak_trapdoor",
+    "step_rewards": {
+      "minecraft:oak_planks": 0.33961119937546275,
+      "minecraft:oak_logs": 0.12007069102264314
+    },
+    "env": {
+      "biome": "oak_forest",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:oak_trapdoor": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "material",
+    "task": "gunpowder",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:gunpowder": 1
+    },
+    "init_command": [
+      "creeper"
+    ]
+  },
+  {
+    "group": "material",
+    "task": "slime_ball",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:slime_ball": 1
+    },
+    "init_command": [
+      "slime"
+    ]
+  },
+  {
+    "group": "material",
+    "task": "shulker_shell",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:shulker_shell": 1
+    },
+    "init_command": [
+      "shulker"
+    ]
+  },
+  {
+    "group": "material",
+    "task": "spider_eye",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:spider_eye": 1
+    },
+    "init_command": [
+      "spider"
+    ]
+  },
+  {
+    "group": "material",
+    "task": "charcoal",
+    "step_rewards": {
+      "minecraft:furnace": 0.3032051477620507,
+      "minecraft:stone_crafting_materials": 0.1071992080366076,
+      "minecraft:logs_that_burn": 0.1071992080366076
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:charcoal": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "material",
+    "task": "logs_that_burn",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:logs_that_burn": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "material",
+    "task": "wooden_shovel",
+    "step_rewards": {
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:wooden_shovel": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "stripped_oak_log",
+    "step_rewards": {
+      "minecraft:wooden_axe": 0.2731283711025476,
+      "minecraft:planks": 0.05256357952645996,
+      "minecraft:stick": 0.14867225410639284,
+      "minecraft:bamboo": 0.05256357952645996
+    },
+    "env": {
+      "biome": "oak_forest",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stripped_oak_log": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "wooden_axe",
+    "step_rewards": {
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:wooden_axe": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "stone",
+    "step_rewards": {
+      "minecraft:cobblestone": 0.1071992080366076,
+      "minecraft:furnace": 0.3032051477620507,
+      "minecraft:stone_crafting_materials": 0.1071992080366076
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stone": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "cobblestone",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:cobblestone": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "dried_kelp_block",
+    "step_rewards": {
+      "minecraft:dried_kelp": 0.4596818903981059
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:kelp": 16
+      }
+    },
+    "task_obj": {
+      "minecraft:dried_kelp_block": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "dried_kelp",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:kelp": 16
+      }
+    },
+    "task_obj": {
+      "minecraft:dried_kelp": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "cracked_polished_blackstone_bricks",
+    "step_rewards": {
+      "minecraft:polished_blackstone_bricks": 0.16620525356820307,
+      "minecraft:blackstone": 0.09047068084710902,
+      "minecraft:wooden_pickaxe": 0.05876243093345301,
+      "minecraft:planks": 0.011308835105888627,
+      "minecraft:stick": 0.03198621596277735,
+      "minecraft:bamboo": 0.011308835105888627,
+      "minecraft:polished_blackstone": 0.12643662021551502
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "blackstone": 4
+      }
+    },
+    "task_obj": {
+      "minecraft:cracked_polished_blackstone_bricks": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "polished_blackstone_bricks",
+    "step_rewards": {
+      "minecraft:blackstone": 0.11899538329288714,
+      "minecraft:wooden_pickaxe": 0.07728976864852997,
+      "minecraft:planks": 0.014874422911610893,
+      "minecraft:stick": 0.04207122122814645,
+      "minecraft:bamboo": 0.014874422911610893,
+      "minecraft:polished_blackstone": 0.1663011037822115
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "blackstone": 4
+      }
+    },
+    "task_obj": {
+      "minecraft:polished_blackstone_bricks": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "blackstone",
+    "step_rewards": {
+      "minecraft:wooden_pickaxe": 0.2731283711025476,
+      "minecraft:planks": 0.05256357952645996,
+      "minecraft:stick": 0.14867225410639284,
+      "minecraft:bamboo": 0.05256357952645996
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:blackstone": 1
+    },
+    "init_command": [
+      "blackstone"
+    ]
+  },
+  {
+    "group": "block",
+    "task": "polished_blackstone",
+    "step_rewards": {
+      "minecraft:blackstone": 0.253770236267795,
+      "minecraft:wooden_pickaxe": 0.16482860349921716,
+      "minecraft:planks": 0.031721279533474374,
+      "minecraft:stick": 0.08972132746413508,
+      "minecraft:bamboo": 0.031721279533474374
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "blackstone": 4
+      }
+    },
+    "task_obj": {
+      "minecraft:polished_blackstone": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "block",
+    "task": "sandstone",
+    "step_rewards": {
+      "minecraft:sand": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:sandstone": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "diamond_sword",
+    "step_rewards": {
+      "minecraft:stick": 0.014949241753874454,
+      "minecraft:planks": 0.005285355108880852,
+      "minecraft:bamboo": 0.005285355108880852,
+      "minecraft:diamond": 0.1671376038687073,
+      "minecraft:diamond_ore": 0.142704587939783,
+      "minecraft:iron_ingot": 0.09788614646134414,
+      "minecraft:furnace": 0.014949241753874454,
+      "minecraft:stone_crafting_materials": 0.005285355108880852,
+      "minecraft:iron_ore": 0.07767853875702188,
+      "minecraft:stone_pickaxe": 0.05909206654341694,
+      "minecraft:stone_tool_materials": 0.04228284087104681,
+      "minecraft:wooden_pickaxe": 0.027463510753876114
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:cobblestone": 64,
+        "minecraft:iron_pickaxe": 2
+      }
+    },
+    "task_obj": {
+      "minecraft:diamond_sword": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "netherite_ingot",
+    "step_rewards": {
+      "minecraft:gold_ingot": 0.1397293770668742,
+      "minecraft:furnace": 0.012497775423009234,
+      "minecraft:stone_crafting_materials": 0.004418630875678201,
+      "minecraft:gold_ores": 0.11930303364331143,
+      "minecraft:iron_pickaxe": 0.09998220338407388,
+      "minecraft:iron_ingot": 0.08183418902705257,
+      "minecraft:iron_ore": 0.06494034604271284,
+      "minecraft:stone_pickaxe": 0.0494017950274794,
+      "minecraft:stick": 0.012497775423009234,
+      "minecraft:planks": 0.004418630875678201,
+      "minecraft:bamboo": 0.004418630875678201,
+      "minecraft:stone_tool_materials": 0.035349047005425606,
+      "minecraft:wooden_pickaxe": 0.02295987952970161,
+      "minecraft:netherite_scrap": 0.012497775423009234,
+      "minecraft:ancient_debris": 0.004418630875678201
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:ancient_debris": 16
+      }
+    },
+    "task_obj": {
+      "minecraft:netherite_ingot": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "gold_ingot",
+    "step_rewards": {
+      "minecraft:furnace": 0.01948706480990581,
+      "minecraft:stone_crafting_materials": 0.00688971783625307,
+      "minecraft:gold_ores": 0.18602238157883288,
+      "minecraft:iron_ingot": 0.1275993599869216,
+      "minecraft:iron_ore": 0.10125775902343324,
+      "minecraft:stone_pickaxe": 0.07702938713827315,
+      "minecraft:stick": 0.01948706480990581,
+      "minecraft:planks": 0.00688971783625307,
+      "minecraft:bamboo": 0.00688971783625307,
+      "minecraft:stone_tool_materials": 0.05511774269002456,
+      "minecraft:wooden_pickaxe": 0.035800024026611484
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:gold_ingot": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "gold_ores",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.17742534985410155,
+      "minecraft:furnace": 0.0270965253421449,
+      "minecraft:stone_crafting_materials": 0.009580068408011896,
+      "minecraft:iron_ore": 0.14079767580351785,
+      "minecraft:stone_pickaxe": 0.10710842094706396,
+      "minecraft:stick": 0.0270965253421449,
+      "minecraft:planks": 0.009580068408011896,
+      "minecraft:bamboo": 0.009580068408011896,
+      "minecraft:stone_tool_materials": 0.07664054726409517,
+      "minecraft:wooden_pickaxe": 0.04977949566798627
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:iron_pickaxe": 1
+      }
+    },
+    "task_obj": {
+      "minecraft:gold_ores": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "netherite_scrap",
+    "step_rewards": {
+      "minecraft:furnace": 0.33961119937546275,
+      "minecraft:stone_crafting_materials": 0.12007069102264314
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:ancient_debris": 1
+      }
+    },
+    "task_obj": {
+      "minecraft:netherite_scrap": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "golden_sword",
+    "step_rewards": {
+      "minecraft:stick": 0.014697466807062316,
+      "minecraft:planks": 0.005196339222768978,
+      "minecraft:bamboo": 0.005196339222768978,
+      "minecraft:gold_ingot": 0.16432267438819062,
+      "minecraft:furnace": 0.014697466807062316,
+      "minecraft:stone_crafting_materials": 0.005196339222768978,
+      "minecraft:gold_ores": 0.14030115901476242,
+      "minecraft:iron_ingot": 0.09623754917964168,
+      "minecraft:iron_ore": 0.07637027775716715,
+      "minecraft:stone_pickaxe": 0.05809683868129929,
+      "minecraft:stone_tool_materials": 0.041570713782151825,
+      "minecraft:wooden_pickaxe": 0.02700097064159653
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:iron_pickaxe": 1
+      }
+    },
+    "task_obj": {
+      "minecraft:golden_sword": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "iron_sword",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.17005510591722747,
+      "minecraft:furnace": 0.025970936457706904,
+      "minecraft:stone_crafting_materials": 0.009182112641504741,
+      "minecraft:iron_ore": 0.1349489443946737,
+      "minecraft:stone_pickaxe": 0.10265914021732381,
+      "minecraft:stick": 0.025970936457706904,
+      "minecraft:planks": 0.009182112641504741,
+      "minecraft:bamboo": 0.009182112641504741,
+      "minecraft:stone_tool_materials": 0.07345690113203793,
+      "minecraft:wooden_pickaxe": 0.04771165684772006
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:iron_sword": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "stone_sword",
+    "step_rewards": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stone_sword": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "wooden_sword",
+    "step_rewards": {
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:wooden_sword": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "weapon",
+    "task": "arrow",
+    "step_rewards": {
+      "minecraft:feather": 0.09682016321769554,
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:bamboo": 0.09682016321769554
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:flint": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:arrow": 1
+    },
+    "init_command": [
+      "chicken"
+    ]
+  },
+  {
+    "group": "weapon",
+    "task": "feather",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:feather": 1
+    },
+    "init_command": [
+      "chicken"
+    ]
+  },
+  {
+    "group": "weapon",
+    "task": "crossbow",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.08458971364567155,
+      "minecraft:furnace": 0.012918601098262018,
+      "minecraft:stone_crafting_materials": 0.0045674152200125264,
+      "minecraft:iron_ore": 0.06712702039471473,
+      "minecraft:stone_pickaxe": 0.051065254567075835,
+      "minecraft:stick": 0.012918601098262018,
+      "minecraft:planks": 0.0045674152200125264,
+      "minecraft:bamboo": 0.0045674152200125264,
+      "minecraft:stone_tool_materials": 0.03653932176010021,
+      "minecraft:wooden_pickaxe": 0.02373298566097523,
+      "minecraft:string": 0.0045674152200125264,
+      "minecraft:tripwire_hook": 0.10334880878609615
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:crossbow": 1
+    },
+    "init_command": [
+      "spider"
+    ]
+  },
+  {
+    "group": "weapon",
+    "task": "tripwire_hook",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.1685078478770429,
+      "minecraft:furnace": 0.025734638111776214,
+      "minecraft:stone_crafting_materials": 0.009098568560109365,
+      "minecraft:iron_ore": 0.13372110217198438,
+      "minecraft:stone_pickaxe": 0.1017250889917346,
+      "minecraft:stick": 0.025734638111776214,
+      "minecraft:planks": 0.009098568560109365,
+      "minecraft:bamboo": 0.009098568560109365,
+      "minecraft:stone_tool_materials": 0.07278854848087492,
+      "minecraft:wooden_pickaxe": 0.047277549066774664
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:tripwire_hook": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "tools",
+    "task": "golden_pickaxe",
+    "step_rewards": {
+      "minecraft:stick": 0.014697466807062316,
+      "minecraft:planks": 0.005196339222768978,
+      "minecraft:bamboo": 0.005196339222768978,
+      "minecraft:gold_ingot": 0.16432267438819062,
+      "minecraft:furnace": 0.014697466807062316,
+      "minecraft:stone_crafting_materials": 0.005196339222768978,
+      "minecraft:gold_ores": 0.14030115901476242,
+      "minecraft:iron_ingot": 0.09623754917964168,
+      "minecraft:iron_ore": 0.07637027775716715,
+      "minecraft:stone_pickaxe": 0.05809683868129929,
+      "minecraft:stone_tool_materials": 0.041570713782151825,
+      "minecraft:wooden_pickaxe": 0.02700097064159653
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:iron_pickaxe": 1
+      }
+    },
+    "task_obj": {
+      "minecraft:golden_pickaxe": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "tools",
+    "task": "stone_hoe",
+    "step_rewards": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stone_hoe": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "tools",
+    "task": "stone_shovel",
+    "step_rewards": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stone_shovel": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "tools",
+    "task": "stone_axe",
+    "step_rewards": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stone_axe": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "tools",
+    "task": "wooden_hoe",
+    "step_rewards": {
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:wooden_hoe": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "mining",
+    "task": "coal",
+    "step_rewards": {
+      "minecraft:wooden_pickaxe": 0.2594887153756792,
+      "minecraft:planks": 0.049938626557939514,
+      "minecraft:stick": 0.1412477659290466,
+      "minecraft:bamboo": 0.049938626557939514,
+      "minecraft:coal_ore": 0.049938626557939514
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:coal": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "armor",
+    "task": "diamond_boots",
+    "step_rewards": {
+      "minecraft:diamond": 0.17082835950424025,
+      "minecraft:diamond_ore": 0.14585581034553732,
+      "minecraft:iron_ingot": 0.10004768185691316,
+      "minecraft:furnace": 0.015279352973450141,
+      "minecraft:stone_crafting_materials": 0.0054020670498347145,
+      "minecraft:iron_ore": 0.07939384697038271,
+      "minecraft:stone_pickaxe": 0.060396945712210846,
+      "minecraft:stick": 0.015279352973450141,
+      "minecraft:planks": 0.0054020670498347145,
+      "minecraft:bamboo": 0.0054020670498347145,
+      "minecraft:stone_tool_materials": 0.043216536398677716,
+      "minecraft:wooden_pickaxe": 0.028069963788622327
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:cobblestone": 64,
+        "minecraft:iron_pickaxe": 2
+      }
+    },
+    "task_obj": {
+      "minecraft:diamond_boots": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "armor",
+    "task": "golden_boots",
+    "step_rewards": {
+      "minecraft:gold_ingot": 0.16788883131434146,
+      "minecraft:furnace": 0.015016433579274515,
+      "minecraft:stone_crafting_materials": 0.005309111006571195,
+      "minecraft:gold_ores": 0.14334599717742225,
+      "minecraft:iron_ingot": 0.0983261118435623,
+      "minecraft:iron_ore": 0.07802767772336049,
+      "minecraft:stone_pickaxe": 0.059357665553927616,
+      "minecraft:stick": 0.015016433579274515,
+      "minecraft:planks": 0.005309111006571195,
+      "minecraft:bamboo": 0.005309111006571195,
+      "minecraft:stone_tool_materials": 0.04247288805256956,
+      "minecraft:wooden_pickaxe": 0.02758695001921336
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:iron_pickaxe": 1
+      }
+    },
+    "task_obj": {
+      "minecraft:golden_boots": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "armor",
+    "task": "iron_boots",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.17794429501767378,
+      "minecraft:furnace": 0.02717577901580247,
+      "minecraft:stone_crafting_materials": 0.009608088813050503,
+      "minecraft:iron_ore": 0.14120948997190205,
+      "minecraft:stone_pickaxe": 0.10742169859918096,
+      "minecraft:stick": 0.02717577901580247,
+      "minecraft:planks": 0.009608088813050503,
+      "minecraft:bamboo": 0.009608088813050503,
+      "minecraft:stone_tool_materials": 0.07686471050440402,
+      "minecraft:wooden_pickaxe": 0.04992509396351285
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:iron_boots": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "armor",
+    "task": "leather_chestplate",
+    "step_rewards": {
+      "minecraft:leather": 0.33961119937546275,
+      "minecraft:rabbit_hide": 0.12007069102264314
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:rabbit": 2
+      }
+    },
+    "task_obj": {
+      "minecraft:leather_chestplate": 1
+    },
+    "init_command": [
+      "cow",
+      "rabbit"
+    ]
+  },
+  {
+    "group": "armor",
+    "task": "leather",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:rabbit_hide": 1
+      }
+    },
+    "task_obj": {
+      "minecraft:leather": 1
+    },
+    "init_command": [
+      "cow",
+      "rabbit"
+    ]
+  },
+  {
+    "group": "armor",
+    "task": "leather_boots",
+    "step_rewards": {
+      "minecraft:leather": 0.4596818903981059
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:rabbit_hide": 8
+      }
+    },
+    "task_obj": {
+      "minecraft:leather_boots": 1
+    },
+    "init_command": [
+      "cow",
+      "rabbit"
+    ]
+  },
+  {
+    "group": "redstone",
+    "task": "dispenser",
+    "step_rewards": {
+      "minecraft:cobblestone": 0.049938626557939514,
+      "minecraft:bow": 0.2594887153756792,
+      "minecraft:stick": 0.1412477659290466,
+      "minecraft:planks": 0.049938626557939514,
+      "minecraft:bamboo": 0.049938626557939514,
+      "minecraft:string": 0.049938626557939514
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:redstone": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:dispenser": 1
+    },
+    "init_command": [
+      "spider"
+    ]
+  },
+  {
+    "group": "redstone",
+    "task": "bow",
+    "step_rewards": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:string": 0.09682016321769554
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:bow": 1
+    },
+    "init_command": [
+      "spider"
+    ]
+  },
+  {
+    "group": "redstone",
+    "task": "sticky_piston",
+    "step_rewards": {
+      "minecraft:piston": 0.16372193263701323,
+      "minecraft:iron_ingot": 0.13400436407491573,
+      "minecraft:furnace": 0.020465241579626654,
+      "minecraft:stone_crafting_materials": 0.007235555549787449,
+      "minecraft:iron_ore": 0.10634051461525354,
+      "minecraft:stone_pickaxe": 0.080895970321503,
+      "minecraft:stick": 0.020465241579626654,
+      "minecraft:planks": 0.007235555549787449,
+      "minecraft:bamboo": 0.007235555549787449,
+      "minecraft:stone_tool_materials": 0.057884444398299595,
+      "minecraft:wooden_pickaxe": 0.03759704949965647,
+      "minecraft:cobblestone": 0.007235555549787449,
+      "minecraft:slime_ball": 0.007235555549787449
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:redstone": 64,
+        "minecraft:oak_log": 16
+      }
+    },
+    "task_obj": {
+      "minecraft:sticky_piston": 1
+    },
+    "init_command": [
+      "slime"
+    ]
+  },
+  {
+    "group": "redstone",
+    "task": "piston",
+    "step_rewards": {
+      "minecraft:iron_ingot": 0.1745893549611146,
+      "minecraft:furnace": 0.026663410189483757,
+      "minecraft:stone_crafting_materials": 0.009426939077271226,
+      "minecraft:iron_ore": 0.13854714345370672,
+      "minecraft:stone_pickaxe": 0.10539638298263802,
+      "minecraft:stick": 0.026663410189483757,
+      "minecraft:planks": 0.009426939077271226,
+      "minecraft:bamboo": 0.009426939077271226,
+      "minecraft:stone_tool_materials": 0.07541551261816981,
+      "minecraft:wooden_pickaxe": 0.04898381232507071,
+      "minecraft:cobblestone": 0.009426939077271226
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:redstone": 64,
+        "minecraft:oak_log": 16
+      }
+    },
+    "task_obj": {
+      "minecraft:piston": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "redstone",
+    "task": "powered_rail",
+    "step_rewards": {
+      "minecraft:stick": 0.01244279530350144,
+      "minecraft:planks": 0.004399192468010997,
+      "minecraft:bamboo": 0.004399192468010997,
+      "minecraft:gold_ingot": 0.13911468064372173,
+      "minecraft:furnace": 0.01244279530350144,
+      "minecraft:stone_crafting_materials": 0.004399192468010997,
+      "minecraft:gold_ores": 0.1187781966362969,
+      "minecraft:iron_pickaxe": 0.09954236242801152,
+      "minecraft:iron_ingot": 0.08147418467905895,
+      "minecraft:iron_ore": 0.0646546609615317,
+      "minecraft:stone_pickaxe": 0.04918446702288829,
+      "minecraft:stone_tool_materials": 0.035193539744087975,
+      "minecraft:wooden_pickaxe": 0.02285887460060811
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:oak_log": 64,
+        "minecraft:redstone": 64,
+        "minecraft:iron_pickaxe": 1
+      }
+    },
+    "task_obj": {
+      "minecraft:powered_rail": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "redstone",
+    "task": "oak_button",
+    "step_rewards": {
+      "minecraft:oak_planks": 0.33961119937546275,
+      "minecraft:oak_logs": 0.12007069102264314
+    },
+    "env": {
+      "biome": "oak_forest",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:oak_button": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "redstone",
+    "task": "daylight_detector",
+    "step_rewards": {
+      "minecraft:quartz": 0.12942965547823046,
+      "minecraft:wooden_slabs": 0.04576029353764767,
+      "minecraft:glass": 0.23777746012941456,
+      "minecraft:sand": 0.04576029353764767,
+      "minecraft:furnace": 0.12942965547823046,
+      "minecraft:stone_crafting_materials": 0.04576029353764767
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:nether_quartz_ore": 16
+      }
+    },
+    "task_obj": {
+      "minecraft:daylight_detector": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "redstone",
+    "task": "quartz",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:nether_quartz_ore": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:quartz": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "redstone",
+    "task": "wooden_slabs",
+    "step_rewards": {},
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:wooden_slabs": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "redstone",
+    "task": "stone_pressure_plate",
+    "step_rewards": {
+      "minecraft:stone": 0.2882814774695222,
+      "minecraft:cobblestone": 0.05547979620647056,
+      "minecraft:furnace": 0.15692056046577213,
+      "minecraft:stone_crafting_materials": 0.05547979620647056
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:stone_pressure_plate": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "redstone",
+    "task": "oak_pressure_plate",
+    "step_rewards": {
+      "minecraft:oak_planks": 0.33961119937546275,
+      "minecraft:oak_logs": 0.12007069102264314
+    },
+    "env": {
+      "biome": "oak_forest",
+      "mobs": [],
+      "init_inventory": {}
+    },
+    "task_obj": {
+      "minecraft:oak_pressure_plate": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "potion",
+    "task": "brewing_stand",
+    "step_rewards": {
+      "minecraft:stone_crafting_materials": 0.3333333333333333
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:blaze_rod": 64
+      }
+    },
+    "task_obj": {
+      "minecraft:brewing_stand": 1
+    },
+    "init_command": []
+  },
+  {
+    "group": "special",
+    "task": "beacon",
+    "step_rewards": {
+      "minecraft:obsidian": 0.12387914545474296,
+      "minecraft:diamond_pickaxe": 0.10872148094872283,
+      "minecraft:stick": 0.008428908226003841,
+      "minecraft:planks": 0.002980069082303194,
+      "minecraft:bamboo": 0.002980069082303194,
+      "minecraft:diamond": 0.09423805884725873,
+      "minecraft:diamond_ore": 0.08046186522218624,
+      "minecraft:iron_pickaxe": 0.06743126580803073,
+      "minecraft:iron_ingot": 0.05519165177096709,
+      "minecraft:furnace": 0.008428908226003841,
+      "minecraft:stone_crafting_materials": 0.002980069082303194,
+      "minecraft:iron_ore": 0.04379789189932172,
+      "minecraft:stone_pickaxe": 0.03331818522837679,
+      "minecraft:stone_tool_materials": 0.02384055265842555,
+      "minecraft:wooden_pickaxe": 0.01548489318184287,
+      "minecraft:glass": 0.01548489318184287,
+      "minecraft:sand": 0.002980069082303194
+    },
+    "env": {
+      "biome": "plains",
+      "mobs": [],
+      "init_inventory": {
+        "minecraft:nether_star": 64,
+        "minecraft:obsidian": 6
+      }
+    },
+    "task_obj": {
+      "minecraft:beacon": 1
+    },
+    "init_command": []
+  }
+]

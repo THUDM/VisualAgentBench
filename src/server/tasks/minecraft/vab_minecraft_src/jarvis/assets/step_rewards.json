@@ -1,0 +1,911 @@
+{
+    "minecraft:cake": {
+      "minecraft:egg": 0.004574392857292033,
+      "minecraft:milk_bucket": 0.1235086071468849,
+      "minecraft:bucket": 0.10350669469448014,
+      "minecraft:iron_ingot": 0.08471894129653429,
+      "minecraft:iron_ore": 0.06722957030038483,
+      "minecraft:stone_pickaxe": 0.05114326692347241,
+      "minecraft:stick": 0.012938336836810017,
+      "minecraft:bamboo": 0.004574392857292033,
+      "minecraft:planks": 0.004574392857292033,
+      "minecraft:stone_tool_materials": 0.03659514285833627,
+      "minecraft:wooden_pickaxe": 0.023769242527829915,
+      "minecraft:furnace": 0.012938336836810017,
+      "minecraft:stone_crafting_materials": 0.004574392857292033,
+      "minecraft:sugar": 0.06722957030038483,
+      "minecraft:honey_bottle": 0.05114326692347241,
+      "minecraft:glass_bottle": 0.03659514285833627,
+      "minecraft:glass": 0.023769242527829915,
+      "minecraft:sand": 0.004574392857292033,
+      "minecraft:sugar_cane": 0.004574392857292033,
+      "minecraft:wheat": 0.004574392857292033
+    },
+    "minecraft:bread": {
+      "minecraft:wheat": 0.3333333333333333
+    },
+    "minecraft:red_dye": {
+      "minecraft:red_tulip": 0.3333333333333333
+    },
+    "minecraft:orange_dye": {
+      "minecraft:orange_tulip": 0.3333333333333333
+    },
+    "minecraft:bone_block": {
+      "minecraft:bone_meal": 0.33961119937546275,
+      "minecraft:bone": 0.12007069102264314
+    },
+    "minecraft:egg": {},
+    "minecraft:milk_bucket": {
+      "minecraft:bucket": 0.16735464410890794,
+      "minecraft:iron_ingot": 0.13697769319959802,
+      "minecraft:iron_ore": 0.10870002992971352,
+      "minecraft:stone_pickaxe": 0.08269091443609831,
+      "minecraft:stick": 0.020919330513613492,
+      "minecraft:bamboo": 0.007396100232029381,
+      "minecraft:planks": 0.007396100232029381,
+      "minecraft:stone_tool_materials": 0.05916880185623505,
+      "minecraft:wooden_pickaxe": 0.03843126413924055,
+      "minecraft:furnace": 0.020919330513613492,
+      "minecraft:stone_crafting_materials": 0.007396100232029381
+    },
+    "minecraft:bucket": {
+      "minecraft:iron_ingot": 0.17794429501767378,
+      "minecraft:iron_ore": 0.14120948997190205,
+      "minecraft:stone_pickaxe": 0.10742169859918096,
+      "minecraft:stick": 0.02717577901580247,
+      "minecraft:bamboo": 0.009608088813050503,
+      "minecraft:planks": 0.009608088813050503,
+      "minecraft:stone_tool_materials": 0.07686471050440402,
+      "minecraft:wooden_pickaxe": 0.04992509396351286,
+      "minecraft:furnace": 0.02717577901580247,
+      "minecraft:stone_crafting_materials": 0.009608088813050503
+    },
+    "minecraft:iron_ingot": {
+      "minecraft:iron_ore": 0.18828056540472438,
+      "minecraft:stone_pickaxe": 0.1432298789055477,
+      "minecraft:stick": 0.036234611706530855,
+      "minecraft:bamboo": 0.012810869825674713,
+      "minecraft:planks": 0.012810869825674713,
+      "minecraft:stone_tool_materials": 0.10248695860539771,
+      "minecraft:wooden_pickaxe": 0.06656723228165895,
+      "minecraft:furnace": 0.036234611706530855,
+      "minecraft:stone_crafting_materials": 0.012810869825674713
+    },
+    "minecraft:iron_ore": {
+      "minecraft:stone_pickaxe": 0.2108171671744983,
+      "minecraft:stick": 0.053332993450871884,
+      "minecraft:bamboo": 0.018856060665044617,
+      "minecraft:planks": 0.018856060665044617,
+      "minecraft:stone_tool_materials": 0.15084848532035694,
+      "minecraft:wooden_pickaxe": 0.09797896530737482
+    },
+    "minecraft:stone_pickaxe": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "minecraft:stick": {
+      "minecraft:bamboo": 0.25,
+      "minecraft:planks": 0.25
+    },
+    "minecraft:bamboo": {},
+    "minecraft:planks": {},
+    "minecraft:stone_tool_materials": {
+      "minecraft:wooden_pickaxe": 0.2731283711025476,
+      "minecraft:stick": 0.14867225410639284,
+      "minecraft:bamboo": 0.05256357952645995,
+      "minecraft:planks": 0.05256357952645995
+    },
+    "minecraft:wooden_pickaxe": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:planks": 0.09682016321769554
+    },
+    "minecraft:furnace": {
+      "minecraft:stone_crafting_materials": 0.3333333333333333
+    },
+    "minecraft:stone_crafting_materials": {},
+    "minecraft:sugar": {
+      "minecraft:honey_bottle": 0.23193358724695762,
+      "minecraft:glass_bottle": 0.16595816555186416,
+      "minecraft:glass": 0.10779299050003341,
+      "minecraft:sand": 0.02074477069398302,
+      "minecraft:furnace": 0.05867507212750143,
+      "minecraft:stone_crafting_materials": 0.02074477069398302,
+      "minecraft:sugar_cane": 0.02074477069398302
+    },
+    "minecraft:honey_bottle": {
+      "minecraft:glass_bottle": 0.2620838720337943,
+      "minecraft:glass": 0.1702284683275919,
+      "minecraft:sand": 0.03276048400422429,
+      "minecraft:furnace": 0.09266064157736166,
+      "minecraft:stone_crafting_materials": 0.03276048400422429
+    },
+    "minecraft:glass_bottle": {
+      "minecraft:glass": 0.2882814774695222,
+      "minecraft:sand": 0.05547979620647056,
+      "minecraft:furnace": 0.15692056046577213,
+      "minecraft:stone_crafting_materials": 0.05547979620647056
+    },
+    "minecraft:glass": {
+      "minecraft:sand": 0.1071992080366076,
+      "minecraft:furnace": 0.3032051477620507,
+      "minecraft:stone_crafting_materials": 0.1071992080366076
+    },
+    "minecraft:sand": {},
+    "minecraft:sugar_cane": {},
+    "minecraft:wheat": {},
+    "minecraft:rabbit_stew": {
+      "minecraft:bowl": 0.14897999502836595,
+      "minecraft:planks": 0.05267238237284784,
+      "minecraft:baked_potato": 0.14897999502836595,
+      "minecraft:potato": 0.05267238237284784,
+      "minecraft:cooked_rabbit": 0.14897999502836595,
+      "minecraft:rabbit": 0.05267238237284784,
+      "minecraft:brown_mushroom": 0.05267238237284784,
+      "minecraft:red_mushroom": 0.05267238237284784,
+      "minecraft:carrot": 0.05267238237284784
+    },
+    "minecraft:bowl": {
+      "minecraft:planks": 0.3333333333333333
+    },
+    "minecraft:baked_potato": {
+      "minecraft:potato": 0.3333333333333333
+    },
+    "minecraft:potato": {},
+    "minecraft:cooked_rabbit": {
+      "minecraft:rabbit": 0.3333333333333333
+    },
+    "minecraft:rabbit": {},
+    "minecraft:brown_mushroom": {},
+    "minecraft:red_mushroom": {},
+    "minecraft:carrot": {},
+    "minecraft:cod": {
+      "minecraft:fishing_rod": 0.2731283711025476,
+      "minecraft:stick": 0.14867225410639284,
+      "minecraft:bamboo": 0.05256357952645995,
+      "minecraft:planks": 0.05256357952645995,
+      "minecraft:string": 0.05256357952645995
+    },
+    "minecraft:fishing_rod": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:string": 0.09682016321769554
+    },
+    "minecraft:string": {},
+    "minecraft:painting": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:wool": 0.09682016321769554
+    },
+    "minecraft:wool": {},
+    "minecraft:carved_pumpkin": {
+      "minecraft:shears": 0.16735464410890794,
+      "minecraft:iron_ingot": 0.13697769319959802,
+      "minecraft:iron_ore": 0.10870002992971352,
+      "minecraft:stone_pickaxe": 0.08269091443609831,
+      "minecraft:stick": 0.020919330513613492,
+      "minecraft:bamboo": 0.007396100232029381,
+      "minecraft:planks": 0.007396100232029381,
+      "minecraft:stone_tool_materials": 0.05916880185623505,
+      "minecraft:wooden_pickaxe": 0.03843126413924055,
+      "minecraft:furnace": 0.020919330513613492,
+      "minecraft:stone_crafting_materials": 0.007396100232029381
+    },
+    "minecraft:shears": {
+      "minecraft:iron_ingot": 0.17794429501767378,
+      "minecraft:iron_ore": 0.14120948997190205,
+      "minecraft:stone_pickaxe": 0.10742169859918096,
+      "minecraft:stick": 0.02717577901580247,
+      "minecraft:bamboo": 0.009608088813050503,
+      "minecraft:planks": 0.009608088813050503,
+      "minecraft:stone_tool_materials": 0.07686471050440402,
+      "minecraft:wooden_pickaxe": 0.04992509396351286,
+      "minecraft:furnace": 0.02717577901580247,
+      "minecraft:stone_crafting_materials": 0.009608088813050503
+    },
+    "minecraft:light_gray_bed": {
+      "minecraft:planks": 0.006500993121922684,
+      "minecraft:light_gray_dye": 0.0726833127093885,
+      "minecraft:azure_bluet": 0.006500993121922684,
+      "minecraft:gray_dye": 0.05200794497538147,
+      "minecraft:black_dye": 0.018387585283834537,
+      "minecraft:ink_sac": 0.006500993121922684,
+      "minecraft:white_dye": 0.03378015116047771,
+      "minecraft:bone_meal": 0.018387585283834537,
+      "minecraft:bone": 0.006500993121922684,
+      "minecraft:lily_of_the_valley": 0.006500993121922684,
+      "minecraft:oxeye_daisy": 0.006500993121922684,
+      "minecraft:white_tulip": 0.006500993121922684,
+      "minecraft:light_gray_wool": 0.09554469582032164,
+      "minecraft:white_wool": 0.018387585283834537,
+      "minecraft:string": 0.006500993121922684,
+      "minecraft:white_bed": 0.03378015116047771
+    },
+    "minecraft:light_gray_dye": {
+      "minecraft:azure_bluet": 0.019528956360540427,
+      "minecraft:gray_dye": 0.15623165088432342,
+      "minecraft:black_dye": 0.055236229888137194,
+      "minecraft:ink_sac": 0.019528956360540427,
+      "minecraft:white_dye": 0.10147543390575424,
+      "minecraft:bone_meal": 0.055236229888137194,
+      "minecraft:bone": 0.019528956360540427,
+      "minecraft:lily_of_the_valley": 0.019528956360540427,
+      "minecraft:oxeye_daisy": 0.019528956360540427,
+      "minecraft:white_tulip": 0.019528956360540427
+    },
+    "minecraft:azure_bluet": {},
+    "minecraft:gray_dye": {
+      "minecraft:black_dye": 0.12942965547823046,
+      "minecraft:ink_sac": 0.04576029353764767,
+      "minecraft:white_dye": 0.2377774601294146,
+      "minecraft:bone_meal": 0.12942965547823046,
+      "minecraft:bone": 0.04576029353764767,
+      "minecraft:lily_of_the_valley": 0.04576029353764767
+    },
+    "minecraft:black_dye": {
+      "minecraft:ink_sac": 0.3333333333333333
+    },
+    "minecraft:wither_rose": {},
+    "minecraft:ink_sac": {},
+    "minecraft:white_dye": {
+      "minecraft:bone_meal": 0.3032051477620507,
+      "minecraft:bone": 0.1071992080366076,
+      "minecraft:lily_of_the_valley": 0.1071992080366076
+    },
+    "minecraft:bone_meal": {
+      "minecraft:bone": 0.3333333333333333
+    },
+    "minecraft:bone": {},
+    "minecraft:lily_of_the_valley": {},
+    "minecraft:oxeye_daisy": {},
+    "minecraft:white_tulip": {},
+    "minecraft:light_gray_wool": {
+      "minecraft:white_wool": 0.03943994683773976,
+      "minecraft:string": 0.01394412692930136,
+      "minecraft:light_gray_dye": 0.15590007850401622,
+      "minecraft:azure_bluet": 0.01394412692930136,
+      "minecraft:gray_dye": 0.11155301543441087,
+      "minecraft:black_dye": 0.03943994683773976,
+      "minecraft:ink_sac": 0.01394412692930136,
+      "minecraft:white_dye": 0.07245580892621804,
+      "minecraft:bone_meal": 0.03943994683773976,
+      "minecraft:bone": 0.01394412692930136,
+      "minecraft:lily_of_the_valley": 0.01394412692930136,
+      "minecraft:oxeye_daisy": 0.01394412692930136,
+      "minecraft:white_tulip": 0.01394412692930136
+    },
+    "minecraft:white_wool": {
+      "minecraft:string": 0.3333333333333333
+    },
+    "minecraft:white_bed": {
+      "minecraft:white_wool": 0.3032051477620507,
+      "minecraft:string": 0.1071992080366076,
+      "minecraft:planks": 0.1071992080366076
+    },
+    "minecraft:ender_chest": {
+      "minecraft:ender_eye": 0.015531177162717258,
+      "minecraft:blaze_powder": 0.008454102034094281,
+      "minecraft:ender_pearl": 0.0029889764385755257,
+      "minecraft:obsidian": 0.12424941730173807,
+      "minecraft:diamond_pickaxe": 0.10904644689364561,
+      "minecraft:stick": 0.008454102034094281,
+      "minecraft:bamboo": 0.0029889764385755257,
+      "minecraft:planks": 0.0029889764385755257,
+      "minecraft:diamond": 0.09451973418477029,
+      "minecraft:diamond_ore": 0.08070236384153918,
+      "minecraft:iron_pickaxe": 0.06763281627275425,
+      "minecraft:iron_ingot": 0.05535661831771658,
+      "minecraft:iron_ore": 0.043928802766268066,
+      "minecraft:stone_pickaxe": 0.0334177724990005,
+      "minecraft:stone_tool_materials": 0.023911811508604205,
+      "minecraft:wooden_pickaxe": 0.015531177162717258,
+      "minecraft:furnace": 0.008454102034094281,
+      "minecraft:stone_crafting_materials": 0.0029889764385755257
+    },
+    "minecraft:ender_eye": {
+      "minecraft:blaze_powder": 0.33961119937546275,
+      "minecraft:ender_pearl": 0.12007069102264314
+    },
+    "minecraft:blaze_powder": {},
+    "minecraft:blaze_rod": {},
+    "minecraft:ender_pearl": {},
+    "minecraft:obsidian": {
+      "minecraft:diamond_pickaxe": 0.13439062002176763,
+      "minecraft:stick": 0.010418973258223819,
+      "minecraft:bamboo": 0.00368366332194568,
+      "minecraft:planks": 0.00368366332194568,
+      "minecraft:diamond": 0.11648766230570463,
+      "minecraft:diamond_ore": 0.09945890969253336,
+      "minecraft:iron_pickaxe": 0.08335178606579055,
+      "minecraft:iron_ingot": 0.0682223994449083,
+      "minecraft:iron_ore": 0.05413857313783531,
+      "minecraft:stone_pickaxe": 0.04118460797046617,
+      "minecraft:stone_tool_materials": 0.02946930657556544,
+      "minecraft:wooden_pickaxe": 0.019140876094763604,
+      "minecraft:furnace": 0.010418973258223819,
+      "minecraft:stone_crafting_materials": 0.00368366332194568
+    },
+    "minecraft:diamond_pickaxe": {
+      "minecraft:stick": 0.012655946601399118,
+      "minecraft:bamboo": 0.004474552832092078,
+      "minecraft:planks": 0.004474552832092078,
+      "minecraft:diamond": 0.1414977846016793,
+      "minecraft:diamond_ore": 0.1208129264664861,
+      "minecraft:iron_pickaxe": 0.10124757281119294,
+      "minecraft:iron_ingot": 0.08286987815354775,
+      "minecraft:iron_ore": 0.06576222759450578,
+      "minecraft:stone_pickaxe": 0.05002702150736044,
+      "minecraft:stone_tool_materials": 0.035796422656736625,
+      "minecraft:wooden_pickaxe": 0.023250458539004072,
+      "minecraft:furnace": 0.012655946601399118,
+      "minecraft:stone_crafting_materials": 0.004474552832092078
+    },
+    "minecraft:diamond": {
+      "minecraft:diamond_ore": 0.15294433527179316,
+      "minecraft:iron_pickaxe": 0.12817537969156007,
+      "minecraft:stick": 0.016021922461445008,
+      "minecraft:bamboo": 0.005664605010066413,
+      "minecraft:planks": 0.005664605010066413,
+      "minecraft:iron_ingot": 0.10490995292432384,
+      "minecraft:iron_ore": 0.08325235121445529,
+      "minecraft:stone_pickaxe": 0.0633322093409719,
+      "minecraft:stone_tool_materials": 0.0453168400805313,
+      "minecraft:wooden_pickaxe": 0.029434151046732717,
+      "minecraft:furnace": 0.016021922461445008,
+      "minecraft:stone_crafting_materials": 0.005664605010066413
+    },
+    "minecraft:diamond_ore": {
+      "minecraft:iron_pickaxe": 0.1615842240849936,
+      "minecraft:stick": 0.0201980280106242,
+      "minecraft:bamboo": 0.007141081286454101,
+      "minecraft:planks": 0.007141081286454101,
+      "minecraft:iron_ingot": 0.13225467623238327,
+      "minecraft:iron_ore": 0.10495203218130135,
+      "minecraft:stone_pickaxe": 0.0798397159468151,
+      "minecraft:stone_tool_materials": 0.05712865029163281,
+      "minecraft:wooden_pickaxe": 0.03710614682735347,
+      "minecraft:furnace": 0.0201980280106242,
+      "minecraft:stone_crafting_materials": 0.007141081286454101
+    },
+    "minecraft:iron_pickaxe": {
+      "minecraft:stick": 0.0259709364577069,
+      "minecraft:bamboo": 0.009182112641504741,
+      "minecraft:planks": 0.009182112641504741,
+      "minecraft:iron_ingot": 0.17005510591722744,
+      "minecraft:iron_ore": 0.1349489443946737,
+      "minecraft:stone_pickaxe": 0.1026591402173238,
+      "minecraft:stone_tool_materials": 0.07345690113203793,
+      "minecraft:wooden_pickaxe": 0.04771165684772005,
+      "minecraft:furnace": 0.0259709364577069,
+      "minecraft:stone_crafting_materials": 0.009182112641504741
+    },
+    "minecraft:flower_banner_pattern": {
+      "minecraft:oxeye_daisy": 0.1071992080366076,
+      "minecraft:paper": 0.3032051477620507,
+      "minecraft:sugar_cane": 0.1071992080366076
+    },
+    "minecraft:paper": {
+      "minecraft:sugar_cane": 0.3333333333333333
+    },
+    "minecraft:iron_trapdoor": {
+      "minecraft:iron_ingot": 0.17794429501767378,
+      "minecraft:iron_ore": 0.14120948997190205,
+      "minecraft:stone_pickaxe": 0.10742169859918096,
+      "minecraft:stick": 0.02717577901580247,
+      "minecraft:bamboo": 0.009608088813050503,
+      "minecraft:planks": 0.009608088813050503,
+      "minecraft:stone_tool_materials": 0.07686471050440402,
+      "minecraft:wooden_pickaxe": 0.04992509396351286,
+      "minecraft:furnace": 0.02717577901580247,
+      "minecraft:stone_crafting_materials": 0.009608088813050503
+    },
+    "minecraft:oak_fence_gate": {
+      "minecraft:stick": 0.2149774612617083,
+      "minecraft:bamboo": 0.07600601033021114,
+      "minecraft:planks": 0.07600601033021114,
+      "minecraft:oak_planks": 0.2149774612617083,
+      "minecraft:oak_logs": 0.07600601033021114
+    },
+    "minecraft:oak_planks": {
+      "minecraft:oak_logs": 0.3333333333333333
+    },
+    "minecraft:oak_logs": {},
+    "minecraft:oak_trapdoor": {
+      "minecraft:oak_planks": 0.33961119937546275,
+      "minecraft:oak_logs": 0.12007069102264314
+    },
+    "minecraft:gunpowder": {},
+    "minecraft:slime_ball": {},
+    "minecraft:shulker_shell": {},
+    "minecraft:spider_eye": {},
+    "minecraft:charcoal": {
+      "minecraft:logs_that_burn": 0.1071992080366076,
+      "minecraft:furnace": 0.3032051477620507,
+      "minecraft:stone_crafting_materials": 0.1071992080366076
+    },
+    "minecraft:logs_that_burn": {},
+    "minecraft:snowball": {
+      "minecraft:wooden_shovel": 0.2731283711025476,
+      "minecraft:stick": 0.14867225410639284,
+      "minecraft:bamboo": 0.05256357952645995,
+      "minecraft:planks": 0.05256357952645995
+    },
+    "minecraft:wooden_shovel": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:planks": 0.09682016321769554
+    },
+    "minecraft:stripped_oak_log": {
+      "minecraft:wooden_axe": 0.2731283711025476,
+      "minecraft:stick": 0.14867225410639284,
+      "minecraft:bamboo": 0.05256357952645995,
+      "minecraft:planks": 0.05256357952645995
+    },
+    "minecraft:wooden_axe": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:planks": 0.09682016321769554
+    },
+    "minecraft:stone": {
+      "minecraft:cobblestone": 0.1071992080366076,
+      "minecraft:furnace": 0.3032051477620507,
+      "minecraft:stone_crafting_materials": 0.1071992080366076
+    },
+    "minecraft:cobblestone": {},
+    "minecraft:dried_kelp_block": {
+      "minecraft:dried_kelp": 0.33961119937546275,
+      "minecraft:kelp": 0.12007069102264314
+    },
+    "minecraft:dried_kelp": {
+      "minecraft:kelp": 0.3333333333333333
+    },
+    "minecraft:kelp": {},
+    "minecraft:cracked_polished_blackstone_bricks": {
+      "minecraft:polished_blackstone_bricks": 0.1662052535682031,
+      "minecraft:polished_blackstone": 0.12643662021551505,
+      "minecraft:blackstone": 0.09047068084710903,
+      "minecraft:wooden_pickaxe": 0.058762430933453014,
+      "minecraft:stick": 0.031986215962777356,
+      "minecraft:bamboo": 0.01130883510588863,
+      "minecraft:planks": 0.01130883510588863
+    },
+    "minecraft:polished_blackstone_bricks": {
+      "minecraft:polished_blackstone": 0.1663011037822115,
+      "minecraft:blackstone": 0.11899538329288713,
+      "minecraft:wooden_pickaxe": 0.07728976864852997,
+      "minecraft:stick": 0.04207122122814645,
+      "minecraft:bamboo": 0.014874422911610891,
+      "minecraft:planks": 0.014874422911610891
+    },
+    "minecraft:polished_blackstone": {
+      "minecraft:blackstone": 0.253770236267795,
+      "minecraft:wooden_pickaxe": 0.16482860349921716,
+      "minecraft:stick": 0.08972132746413508,
+      "minecraft:bamboo": 0.031721279533474374,
+      "minecraft:planks": 0.031721279533474374
+    },
+    "minecraft:blackstone": {
+      "minecraft:wooden_pickaxe": 0.2731283711025476,
+      "minecraft:stick": 0.14867225410639284,
+      "minecraft:bamboo": 0.05256357952645995,
+      "minecraft:planks": 0.05256357952645995
+    },
+    "minecraft:sandstone": {
+      "minecraft:sand": 0.3333333333333333
+    },
+    "minecraft:netherite_sword": {
+      "minecraft:netherite_ingot": 0.07700606725119678,
+      "minecraft:netherite_scrap": 0.005970090436975806,
+      "minecraft:ancient_debris": 0.0021107457161412754,
+      "minecraft:gold_ingot": 0.06674764024449663,
+      "minecraft:gold_ores": 0.05699013433581444,
+      "minecraft:iron_pickaxe": 0.04776072349580645,
+      "minecraft:stick": 0.005970090436975806,
+      "minecraft:bamboo": 0.0021107457161412754,
+      "minecraft:planks": 0.0021107457161412754,
+      "minecraft:iron_ingot": 0.03909155772063324,
+      "minecraft:iron_ore": 0.03102149988786953,
+      "minecraft:stone_pickaxe": 0.023598854522541835,
+      "minecraft:stone_tool_materials": 0.016885965729130203,
+      "minecraft:wooden_pickaxe": 0.010967756466645133,
+      "minecraft:furnace": 0.005970090436975806,
+      "minecraft:stone_crafting_materials": 0.0021107457161412754,
+      "minecraft:diamond_sword": 0.07700606725119678,
+      "minecraft:diamond": 0.06674764024449663,
+      "minecraft:diamond_ore": 0.05699013433581444
+    },
+    "minecraft:netherite_ingot": {
+      "minecraft:netherite_scrap": 0.012497775423009234,
+      "minecraft:ancient_debris": 0.004418630875678201,
+      "minecraft:gold_ingot": 0.1397293770668742,
+      "minecraft:gold_ores": 0.11930303364331143,
+      "minecraft:iron_pickaxe": 0.09998220338407388,
+      "minecraft:stick": 0.012497775423009234,
+      "minecraft:bamboo": 0.004418630875678201,
+      "minecraft:planks": 0.004418630875678201,
+      "minecraft:iron_ingot": 0.08183418902705257,
+      "minecraft:iron_ore": 0.06494034604271284,
+      "minecraft:stone_pickaxe": 0.0494017950274794,
+      "minecraft:stone_tool_materials": 0.035349047005425606,
+      "minecraft:wooden_pickaxe": 0.02295987952970161,
+      "minecraft:furnace": 0.012497775423009234,
+      "minecraft:stone_crafting_materials": 0.004418630875678201
+    },
+    "minecraft:netherite_scrap": {
+      "minecraft:furnace": 0.33961119937546275,
+      "minecraft:stone_crafting_materials": 0.12007069102264314
+    },
+    "minecraft:ancient_debris": {},
+    "minecraft:gold_ingot": {
+      "minecraft:gold_ores": 0.14969790748861356,
+      "minecraft:iron_pickaxe": 0.12545470283216012,
+      "minecraft:stick": 0.015681837854020015,
+      "minecraft:bamboo": 0.005544366944022725,
+      "minecraft:planks": 0.005544366944022725,
+      "minecraft:iron_ingot": 0.10268311277819912,
+      "minecraft:iron_ore": 0.08148521975765867,
+      "minecraft:stone_pickaxe": 0.06198790689518792,
+      "minecraft:stone_tool_materials": 0.0443549355521818,
+      "minecraft:wooden_pickaxe": 0.028809375728558247,
+      "minecraft:furnace": 0.015681837854020015,
+      "minecraft:stone_crafting_materials": 0.005544366944022725
+    },
+    "minecraft:gold_ores": {
+      "minecraft:iron_pickaxe": 0.1615842240849936,
+      "minecraft:stick": 0.0201980280106242,
+      "minecraft:bamboo": 0.007141081286454101,
+      "minecraft:planks": 0.007141081286454101,
+      "minecraft:iron_ingot": 0.13225467623238327,
+      "minecraft:iron_ore": 0.10495203218130135,
+      "minecraft:stone_pickaxe": 0.0798397159468151,
+      "minecraft:stone_tool_materials": 0.05712865029163281,
+      "minecraft:wooden_pickaxe": 0.03710614682735347,
+      "minecraft:furnace": 0.0201980280106242,
+      "minecraft:stone_crafting_materials": 0.007141081286454101
+    },
+    "minecraft:diamond_sword": {
+      "minecraft:stick": 0.012655946601399118,
+      "minecraft:bamboo": 0.004474552832092078,
+      "minecraft:planks": 0.004474552832092078,
+      "minecraft:diamond": 0.1414977846016793,
+      "minecraft:diamond_ore": 0.1208129264664861,
+      "minecraft:iron_pickaxe": 0.10124757281119294,
+      "minecraft:iron_ingot": 0.08286987815354775,
+      "minecraft:iron_ore": 0.06576222759450578,
+      "minecraft:stone_pickaxe": 0.05002702150736044,
+      "minecraft:stone_tool_materials": 0.035796422656736625,
+      "minecraft:wooden_pickaxe": 0.023250458539004072,
+      "minecraft:furnace": 0.012655946601399118,
+      "minecraft:stone_crafting_materials": 0.004474552832092078
+    },
+    "minecraft:golden_sword": {
+      "minecraft:stick": 0.01244279530350144,
+      "minecraft:bamboo": 0.004399192468010997,
+      "minecraft:planks": 0.004399192468010997,
+      "minecraft:gold_ingot": 0.13911468064372173,
+      "minecraft:gold_ores": 0.1187781966362969,
+      "minecraft:iron_pickaxe": 0.09954236242801152,
+      "minecraft:iron_ingot": 0.08147418467905897,
+      "minecraft:iron_ore": 0.0646546609615317,
+      "minecraft:stone_pickaxe": 0.04918446702288829,
+      "minecraft:stone_tool_materials": 0.035193539744087975,
+      "minecraft:wooden_pickaxe": 0.02285887460060811,
+      "minecraft:furnace": 0.01244279530350144,
+      "minecraft:stone_crafting_materials": 0.004399192468010997
+    },
+    "minecraft:iron_sword": {
+      "minecraft:stick": 0.0259709364577069,
+      "minecraft:bamboo": 0.009182112641504741,
+      "minecraft:planks": 0.009182112641504741,
+      "minecraft:iron_ingot": 0.17005510591722744,
+      "minecraft:iron_ore": 0.1349489443946737,
+      "minecraft:stone_pickaxe": 0.1026591402173238,
+      "minecraft:stone_tool_materials": 0.07345690113203793,
+      "minecraft:wooden_pickaxe": 0.04771165684772005,
+      "minecraft:furnace": 0.0259709364577069,
+      "minecraft:stone_crafting_materials": 0.009182112641504741
+    },
+    "minecraft:stone_sword": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "minecraft:wooden_sword": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:planks": 0.09682016321769554
+    },
+    "minecraft:arrow": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:feather": 0.09682016321769554
+    },
+    "minecraft:flint": {},
+    "minecraft:feather": {},
+    "minecraft:crossbow": {
+      "minecraft:stick": 0.012918601098262018,
+      "minecraft:bamboo": 0.0045674152200125264,
+      "minecraft:planks": 0.0045674152200125264,
+      "minecraft:iron_ingot": 0.08458971364567155,
+      "minecraft:iron_ore": 0.06712702039471473,
+      "minecraft:stone_pickaxe": 0.051065254567075835,
+      "minecraft:stone_tool_materials": 0.03653932176010021,
+      "minecraft:wooden_pickaxe": 0.02373298566097523,
+      "minecraft:furnace": 0.012918601098262018,
+      "minecraft:stone_crafting_materials": 0.0045674152200125264,
+      "minecraft:string": 0.0045674152200125264,
+      "minecraft:tripwire_hook": 0.10334880878609615
+    },
+    "minecraft:tripwire_hook": {
+      "minecraft:stick": 0.02573463811177621,
+      "minecraft:bamboo": 0.009098568560109363,
+      "minecraft:planks": 0.009098568560109363,
+      "minecraft:iron_ingot": 0.1685078478770429,
+      "minecraft:iron_ore": 0.13372110217198438,
+      "minecraft:stone_pickaxe": 0.10172508899173459,
+      "minecraft:stone_tool_materials": 0.0727885484808749,
+      "minecraft:wooden_pickaxe": 0.04727754906677466,
+      "minecraft:furnace": 0.02573463811177621,
+      "minecraft:stone_crafting_materials": 0.009098568560109363
+    },
+    "minecraft:netherite_pickaxe": {
+      "minecraft:netherite_ingot": 0.07700606725119678,
+      "minecraft:netherite_scrap": 0.005970090436975806,
+      "minecraft:ancient_debris": 0.0021107457161412754,
+      "minecraft:gold_ingot": 0.06674764024449663,
+      "minecraft:gold_ores": 0.05699013433581444,
+      "minecraft:iron_pickaxe": 0.04776072349580645,
+      "minecraft:stick": 0.005970090436975806,
+      "minecraft:bamboo": 0.0021107457161412754,
+      "minecraft:planks": 0.0021107457161412754,
+      "minecraft:iron_ingot": 0.03909155772063324,
+      "minecraft:iron_ore": 0.03102149988786953,
+      "minecraft:stone_pickaxe": 0.023598854522541835,
+      "minecraft:stone_tool_materials": 0.016885965729130203,
+      "minecraft:wooden_pickaxe": 0.010967756466645133,
+      "minecraft:furnace": 0.005970090436975806,
+      "minecraft:stone_crafting_materials": 0.0021107457161412754,
+      "minecraft:diamond_pickaxe": 0.07700606725119678,
+      "minecraft:diamond": 0.06674764024449663,
+      "minecraft:diamond_ore": 0.05699013433581444
+    },
+    "minecraft:golden_pickaxe": {
+      "minecraft:stick": 0.01244279530350144,
+      "minecraft:bamboo": 0.004399192468010997,
+      "minecraft:planks": 0.004399192468010997,
+      "minecraft:gold_ingot": 0.13911468064372173,
+      "minecraft:gold_ores": 0.1187781966362969,
+      "minecraft:iron_pickaxe": 0.09954236242801152,
+      "minecraft:iron_ingot": 0.08147418467905897,
+      "minecraft:iron_ore": 0.0646546609615317,
+      "minecraft:stone_pickaxe": 0.04918446702288829,
+      "minecraft:stone_tool_materials": 0.035193539744087975,
+      "minecraft:wooden_pickaxe": 0.02285887460060811,
+      "minecraft:furnace": 0.01244279530350144,
+      "minecraft:stone_crafting_materials": 0.004399192468010997
+    },
+    "minecraft:stone_hoe": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "minecraft:stone_shovel": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "minecraft:stone_axe": {
+      "minecraft:stick": 0.07780448946769598,
+      "minecraft:bamboo": 0.02750804105468257,
+      "minecraft:planks": 0.02750804105468257,
+      "minecraft:stone_tool_materials": 0.22006432843746057,
+      "minecraft:wooden_pickaxe": 0.14293597417020235
+    },
+    "minecraft:wooden_hoe": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:planks": 0.09682016321769554
+    },
+    "minecraft:coal": {
+      "minecraft:coal_ore": 0.049938626557939514,
+      "minecraft:wooden_pickaxe": 0.2594887153756792,
+      "minecraft:stick": 0.1412477659290466,
+      "minecraft:bamboo": 0.049938626557939514,
+      "minecraft:planks": 0.049938626557939514
+    },
+    "minecraft:coal_ore": {},
+    "minecraft:netherite_boots": {
+      "minecraft:netherite_ingot": 0.07779896173910417,
+      "minecraft:netherite_scrap": 0.006031561590727177,
+      "minecraft:ancient_debris": 0.002132479050973753,
+      "minecraft:gold_ingot": 0.06743490863671366,
+      "minecraft:gold_ores": 0.05757693437629133,
+      "minecraft:iron_pickaxe": 0.048252492725817414,
+      "minecraft:stick": 0.006031561590727177,
+      "minecraft:bamboo": 0.002132479050973753,
+      "minecraft:planks": 0.002132479050973753,
+      "minecraft:iron_ingot": 0.03949406471452107,
+      "minecraft:iron_ore": 0.031340913372361286,
+      "minecraft:stone_pickaxe": 0.023841840592857756,
+      "minecraft:stone_tool_materials": 0.017059832407790024,
+      "minecraft:wooden_pickaxe": 0.011080686187088407,
+      "minecraft:furnace": 0.006031561590727177,
+      "minecraft:stone_crafting_materials": 0.002132479050973753,
+      "minecraft:diamond_boots": 0.07779896173910417,
+      "minecraft:diamond": 0.06743490863671366,
+      "minecraft:diamond_ore": 0.05757693437629133
+    },
+    "minecraft:diamond_boots": {
+      "minecraft:diamond": 0.14462235820956895,
+      "minecraft:diamond_ore": 0.123480734182287,
+      "minecraft:iron_pickaxe": 0.10348333568733471,
+      "minecraft:stick": 0.012935416960916839,
+      "minecraft:bamboo": 0.004573360525269889,
+      "minecraft:planks": 0.004573360525269889,
+      "minecraft:iron_ingot": 0.08469982223992698,
+      "minecraft:iron_ore": 0.06721439818018848,
+      "minecraft:stone_pickaxe": 0.05113172510058808,
+      "minecraft:stone_tool_materials": 0.03658688420215911,
+      "minecraft:wooden_pickaxe": 0.023763878373292007,
+      "minecraft:furnace": 0.012935416960916839,
+      "minecraft:stone_crafting_materials": 0.004573360525269889
+    },
+    "minecraft:golden_boots": {
+      "minecraft:gold_ingot": 0.14213376966326197,
+      "minecraft:gold_ores": 0.12135594003164589,
+      "minecraft:iron_pickaxe": 0.10170264667691238,
+      "minecraft:stick": 0.012712830834614048,
+      "minecraft:bamboo": 0.004494664445616515,
+      "minecraft:planks": 0.004494664445616515,
+      "minecraft:iron_ingot": 0.08324235044849707,
+      "minecraft:iron_ore": 0.06605780674073936,
+      "minecraft:stone_pickaxe": 0.05025187618224967,
+      "minecraft:stone_tool_materials": 0.03595731556493212,
+      "minecraft:wooden_pickaxe": 0.023354961548343614,
+      "minecraft:furnace": 0.012712830834614048,
+      "minecraft:stone_crafting_materials": 0.004494664445616515
+    },
+    "minecraft:iron_boots": {
+      "minecraft:iron_ingot": 0.17794429501767378,
+      "minecraft:iron_ore": 0.14120948997190205,
+      "minecraft:stone_pickaxe": 0.10742169859918096,
+      "minecraft:stick": 0.02717577901580247,
+      "minecraft:bamboo": 0.009608088813050503,
+      "minecraft:planks": 0.009608088813050503,
+      "minecraft:stone_tool_materials": 0.07686471050440402,
+      "minecraft:wooden_pickaxe": 0.04992509396351286,
+      "minecraft:furnace": 0.02717577901580247,
+      "minecraft:stone_crafting_materials": 0.009608088813050503
+    },
+    "minecraft:leather_chestplate": {
+      "minecraft:leather": 0.33961119937546275,
+      "minecraft:rabbit_hide": 0.12007069102264314
+    },
+    "minecraft:leather": {
+      "minecraft:rabbit_hide": 0.3333333333333333
+    },
+    "minecraft:rabbit_hide": {},
+    "minecraft:leather_boots": {
+      "minecraft:leather": 0.33961119937546275,
+      "minecraft:rabbit_hide": 0.12007069102264314
+    },
+    "minecraft:dispenser": {
+      "minecraft:cobblestone": 0.049938626557939514,
+      "minecraft:bow": 0.2594887153756792,
+      "minecraft:stick": 0.1412477659290466,
+      "minecraft:bamboo": 0.049938626557939514,
+      "minecraft:planks": 0.049938626557939514,
+      "minecraft:string": 0.049938626557939514
+    },
+    "minecraft:redstone": {},
+    "minecraft:redstone_ore": {},
+    "minecraft:bow": {
+      "minecraft:stick": 0.27384877586728346,
+      "minecraft:bamboo": 0.09682016321769554,
+      "minecraft:planks": 0.09682016321769554,
+      "minecraft:string": 0.09682016321769554
+    },
+    "minecraft:sticky_piston": {
+      "minecraft:slime_ball": 0.007235555549787448,
+      "minecraft:piston": 0.1637219326370132,
+      "minecraft:iron_ingot": 0.1340043640749157,
+      "minecraft:iron_ore": 0.10634051461525351,
+      "minecraft:stone_pickaxe": 0.08089597032150299,
+      "minecraft:stick": 0.02046524157962665,
+      "minecraft:bamboo": 0.007235555549787448,
+      "minecraft:planks": 0.007235555549787448,
+      "minecraft:stone_tool_materials": 0.05788444439829958,
+      "minecraft:wooden_pickaxe": 0.03759704949965646,
+      "minecraft:furnace": 0.02046524157962665,
+      "minecraft:stone_crafting_materials": 0.007235555549787448,
+      "minecraft:cobblestone": 0.007235555549787448
+    },
+    "minecraft:piston": {
+      "minecraft:iron_ingot": 0.1745893549611146,
+      "minecraft:iron_ore": 0.13854714345370672,
+      "minecraft:stone_pickaxe": 0.10539638298263802,
+      "minecraft:stick": 0.02666341018948376,
+      "minecraft:bamboo": 0.009426939077271226,
+      "minecraft:planks": 0.009426939077271226,
+      "minecraft:stone_tool_materials": 0.07541551261816981,
+      "minecraft:wooden_pickaxe": 0.04898381232507071,
+      "minecraft:furnace": 0.02666341018948376,
+      "minecraft:stone_crafting_materials": 0.009426939077271226,
+      "minecraft:cobblestone": 0.009426939077271226
+    },
+    "minecraft:powered_rail": {
+      "minecraft:stick": 0.01244279530350144,
+      "minecraft:bamboo": 0.004399192468010997,
+      "minecraft:planks": 0.004399192468010997,
+      "minecraft:gold_ingot": 0.13911468064372173,
+      "minecraft:gold_ores": 0.1187781966362969,
+      "minecraft:iron_pickaxe": 0.09954236242801152,
+      "minecraft:iron_ingot": 0.08147418467905897,
+      "minecraft:iron_ore": 0.0646546609615317,
+      "minecraft:stone_pickaxe": 0.04918446702288829,
+      "minecraft:stone_tool_materials": 0.035193539744087975,
+      "minecraft:wooden_pickaxe": 0.02285887460060811,
+      "minecraft:furnace": 0.01244279530350144,
+      "minecraft:stone_crafting_materials": 0.004399192468010997
+    },
+    "minecraft:oak_button": {
+      "minecraft:oak_planks": 0.33961119937546275,
+      "minecraft:oak_logs": 0.12007069102264314
+    },
+    "minecraft:daylight_detector": {
+      "minecraft:quartz": 0.12942965547823046,
+      "minecraft:wooden_slabs": 0.04576029353764767,
+      "minecraft:glass": 0.2377774601294146,
+      "minecraft:sand": 0.04576029353764767,
+      "minecraft:furnace": 0.12942965547823046,
+      "minecraft:stone_crafting_materials": 0.04576029353764767
+    },
+    "minecraft:quartz": {},
+    "minecraft:nether_quartz_ore": {},
+    "minecraft:wooden_slabs": {},
+    "minecraft:stone_pressure_plate": {
+      "minecraft:stone": 0.2882814774695222,
+      "minecraft:cobblestone": 0.05547979620647056,
+      "minecraft:furnace": 0.15692056046577213,
+      "minecraft:stone_crafting_materials": 0.05547979620647056
+    },
+    "minecraft:oak_pressure_plate": {
+      "minecraft:oak_planks": 0.33961119937546275,
+      "minecraft:oak_logs": 0.12007069102264314
+    },
+    "minecraft:brewing_stand": {
+      "minecraft:stone_crafting_materials": 0.3333333333333333
+    },
+    "minecraft:beacon": {
+      "minecraft:obsidian": 0.12387914545474296,
+      "minecraft:diamond_pickaxe": 0.10872148094872283,
+      "minecraft:stick": 0.008428908226003841,
+      "minecraft:bamboo": 0.002980069082303194,
+      "minecraft:planks": 0.002980069082303194,
+      "minecraft:diamond": 0.09423805884725873,
+      "minecraft:diamond_ore": 0.08046186522218624,
+      "minecraft:iron_pickaxe": 0.06743126580803073,
+      "minecraft:iron_ingot": 0.05519165177096709,
+      "minecraft:iron_ore": 0.04379789189932171,
+      "minecraft:stone_pickaxe": 0.03331818522837679,
+      "minecraft:stone_tool_materials": 0.02384055265842555,
+      "minecraft:wooden_pickaxe": 0.01548489318184287,
+      "minecraft:furnace": 0.008428908226003841,
+      "minecraft:stone_crafting_materials": 0.002980069082303194,
+      "minecraft:glass": 0.01548489318184287,
+      "minecraft:sand": 0.002980069082303194
+    },
+    "minecraft:nether_star": {}
+}

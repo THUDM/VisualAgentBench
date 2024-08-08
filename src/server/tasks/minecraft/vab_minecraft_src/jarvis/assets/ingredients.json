@@ -1,0 +1,317 @@
+{
+    "clean": [
+        "/forceload add ~-50 ~-30 ~50 ~50",
+        "/fill ~-30 ~ ~-30 ~30 ~2 ~50 minecraft:air",
+        "/fill ~-30 ~3 ~-30 ~30 ~5 ~50 minecraft:air",
+        "/fill ~-30 ~6 ~-30 ~30 ~8 ~50 minecraft:air",
+        "/fill ~-30 ~9 ~-30 ~30 ~11 ~50 minecraft:air",
+        "/fill ~-30 ~12 ~-30 ~30 ~14 ~50 minecraft:air",
+        "/fill ~-30 ~15 ~-30 ~30 ~17 ~50 minecraft:air",
+        "/fill ~-50 ~-2 ~-50 ~50 ~-2 ~50 minecraft:dirt",
+        "/fill ~-50 ~-3 ~-50 ~50 ~-3 ~50 minecraft:dirt",
+        "/fill ~-50 ~-4 ~-50 ~50 ~-4 ~50 minecraft:dirt",
+        "/fill ~-50 ~-5 ~-50 ~50 ~-5 ~50 minecraft:dirt",
+        "/fill ~-50 ~-1 ~-50 ~50 ~-1 ~50 minecraft:grass_block"
+    ],
+    "ghast": [
+        "/difficulty easy",
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:ghast ~-17 ~ ~2 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~3 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~4 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~5 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~6 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~7 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~8 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~9 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~10 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~11 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~12 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~13 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~14 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:ghast ~-17 ~ ~15 {Silent:1b,NoAI:1b}"
+    ],
+    "wither": [
+        "/difficulty easy",
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:wither ~0 ~ ~18 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:wither ~-2 ~ ~20 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:wither ~2 ~ ~29 {Silent:1b,NoAI:1b}"
+    ],
+    "creeper": [
+        "/difficulty easy",
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:creeper ~-6 ~ ~4 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~12 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~8 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~15 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~16 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~17 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~18 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~19 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~20 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~21 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~22 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~23 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~24 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:creeper ~-6 ~ ~25 {Silent:1b,NoAI:1b}",
+        "/summon item ~-6 ~ ~24 {Item:{id:\"minecraft:gunpowder\",Count:1},Age:-32768}",
+        "/summon item ~-6 ~ ~12 {Item:{id:\"minecraft:gunpowder\",Count:1},Age:-32768}",
+        "/summon item ~-6 ~ ~18 {Item:{id:\"minecraft:gunpowder\",Count:1},Age:-32768}"
+    ],
+    "enderman": [
+        "/difficulty easy",
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:enderman ~8 ~ ~7 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~13 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~14 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~15 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~16 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~17 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~18 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~19 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~20 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~21 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~22 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~23 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~24 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:enderman ~8 ~ ~25 {Silent:1b,NoAI:1b}",
+        "/summon item ~8 ~ ~7 {Item:{id:\"minecraft:ender_pearl\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~13 {Item:{id:\"minecraft:ender_pearl\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~15 {Item:{id:\"minecraft:ender_pearl\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~17 {Item:{id:\"minecraft:ender_pearl\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~19 {Item:{id:\"minecraft:ender_pearl\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~25 {Item:{id:\"minecraft:ender_pearl\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~12 {Item:{id:\"minecraft:ender_eye\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~14 {Item:{id:\"minecraft:ender_eye\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~16 {Item:{id:\"minecraft:ender_eye\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~18 {Item:{id:\"minecraft:ender_eye\",Count:2},Age:-32768}",
+        "/summon item ~8 ~ ~24 {Item:{id:\"minecraft:ender_eye\",Count:2},Age:-32768}"
+    ],
+    "slime": [
+        "/difficulty easy",
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:slime ~-8 ~ ~11 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~7 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~14 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~15 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~16 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~17 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~18 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~19 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~20 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~21 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~22 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~23 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~24 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:slime ~-8 ~ ~25 {Silent:1b,NoAI:1b}"
+    ],
+    "shulker": [
+        "/difficulty easy",
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:shulker ~6 ~ ~10 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~7 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~14 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~15 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~16 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~17 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~18 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~19 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~20 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~21 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~22 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~23 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~24 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:shulker ~6 ~ ~25 {Silent:1b,NoAI:1b}"
+    ],
+    "skeleton": [
+        "/difficulty easy",
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:skeleton ~-10 ~ ~12 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~2 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~14 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~15 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~16 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~17 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~18 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~19 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~20 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~21 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~22 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~23 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~24 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:skeleton ~-10 ~ ~25 {Silent:1b,NoAI:1b}",
+        "/summon item ~-10 ~ ~12 {Item:{id:\"minecraft:bone\",Count:3},Age:-32768}",
+        "/summon item ~-10 ~ ~20 {Item:{id:\"minecraft:bone\",Count:3},Age:-32768}",
+        "/summon item ~-10 ~ ~24 {Item:{id:\"minecraft:bone\",Count:3},Age:-32768}"
+    ],
+    "spider": [
+        "/difficulty easy",
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:spider ~10 ~ ~11 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~2 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~14 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~6 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~16 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~17 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~18 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~19 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~20 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~21 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~22 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~23 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~24 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:spider ~10 ~ ~25 {Silent:1b,NoAI:1b}"
+    ],
+    "chicken": [
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:chicken ~-8 ~ ~2 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~3 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~4 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~5 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~6 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~7 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~8 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~9 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~10 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~11 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~12 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~-1 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~0 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:chicken ~-8 ~ ~1 {Silent:1b,NoAI:1b}"
+    ],
+    "egg": [
+        "/summon item ~-8 ~ ~2 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~3 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~4 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~5 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~6 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~7 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~8 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~9 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~0 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~-1 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}",
+        "/summon item ~-8 ~ ~1 {Item:{id:\"minecraft:egg\",Count:3},Age:-32768}"
+    ],
+    "cow": [
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:cow ~-10 ~ ~2 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~3 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~4 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~5 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~6 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~7 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~8 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~9 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~10 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~11 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~12 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~-1 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~0 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:cow ~-10 ~ ~1 {Silent:1b,NoAI:1b}"
+    ],
+    "pig": [
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:pig ~8 ~ ~2 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~3 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~4 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~5 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~6 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~7 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~8 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~9 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~-1 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~0 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:pig ~8 ~ ~1 {Silent:1b,NoAI:1b}"
+    ],
+    "sheep": [
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:sheep ~10 ~ ~2 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~3 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~4 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~5 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~6 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~7 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~8 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~9 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~-1 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~0 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:sheep ~10 ~ ~1 {Silent:1b,NoAI:1b}"
+    ],
+    "rabbit": [
+        "/effect give @a minecraft:strength 1000000 255",
+        "/summon minecraft:rabbit ~12 ~ ~2 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~3 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~4 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~5 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~6 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~7 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~8 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~9 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~0 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~-1 {Silent:1b,NoAI:1b}",
+        "/summon minecraft:rabbit ~12 ~ ~1 {Silent:1b,NoAI:1b}"
+    ],
+    "water": [
+        "/fill ~-15 ~-2 ~10 ~15 ~-1 ~10 minecraft:water",
+        "/fill ~-15 ~-3 ~10 ~15 ~-3 ~10 minecraft:sand",
+        "/fill ~-15 ~-1 ~11 ~15 ~-1 ~11 minecraft:dirt",
+        "/fill ~-15 ~-1 ~9 ~15 ~-1 ~9 minecraft:dirt",
+        "/fill ~-16 ~-2 ~10 ~-16 ~-1 ~10 minecraft:dirt",
+        "/fill ~16 ~-2 ~10 ~16 ~-1 ~10 minecraft:dirt"
+    ],
+    "sugar_cane": [
+        "/fill ~-15 ~-1 ~11 ~15 ~-1 ~11 minecraft:sand",
+        "/fill ~-15 ~0 ~11 ~15 ~0 ~11 minecraft:sugar_cane[age=15]"
+    ],
+    "wheat": [
+        "/fill ~-15 ~-1 ~9 ~15 ~-1 ~9 minecraft:farmland",
+        "/fill ~-15 ~0 ~9 ~15 ~0 ~9 minecraft:wheat[age=7]"
+    ],
+    "potatoes": [
+        "/fill ~-15 ~-1 ~8 ~15 ~-1 ~8 minecraft:farmland",
+        "/fill ~-15 ~0 ~8 ~15 ~0 ~8 minecraft:potatoes[age=7]"
+    ],
+    "carrots": [
+        "/fill ~-15 ~-1 ~7 ~15 ~-1 ~7 minecraft:farmland",
+        "/fill ~-15 ~ ~7 ~15 ~ ~7 minecraft:carrots[age=7]"
+    ],
+    "bamboo": [
+        "/fill ~-15 ~-1 ~6 ~15 ~-1 ~6 minecraft:dirt",
+        "/fill ~-15 ~ ~6 ~15 ~ ~6 minecraft:bamboo[age=1]"
+    ],
+    "azure_bluet": [
+        "/fill ~0 ~-1 ~6 ~15 ~-1 ~6 minecraft:dirt",
+        "/fill ~0 ~ ~6 ~15 ~ ~6 minecraft:azure_bluet"
+    ],
+    "white_tulip": [
+        "/fill ~-15 ~-1 ~5 ~-1 ~-1 ~5 minecraft:dirt",
+        "/fill ~-15 ~ ~5 ~-1 ~ ~5 minecraft:white_tulip"
+    ],
+    "oxeye_daisy": [
+        "/fill ~0 ~-1 ~5 ~15 ~-1 ~5 minecraft:dirt",
+        "/fill ~0 ~ ~5 ~15 ~ ~5 minecraft:oxeye_daisy"
+    ],
+    "lily_of_the_valley": [
+        "/fill ~-15 ~-1 ~4 ~-1 ~-1 ~4 minecraft:dirt",
+        "/fill ~-15 ~ ~4 ~-1 ~ ~4 minecraft:lily_of_the_valley"
+    ],
+    "wither_rose": [
+        "/fill ~0 ~-1 ~4 ~15 ~-1 ~4 minecraft:dirt",
+        "/fill ~0 ~ ~4 ~15 ~ ~4 minecraft:wither_rose"
+    ],
+    "obsidian": [
+        "/fill ~-5 ~ ~2 ~5 ~ ~2 minecraft:obsidian"
+    ],
+    "blackstone": [
+        "/fill ~-3 ~ ~3 ~3 ~ ~3 minecraft:blackstone"
+    ],
+    "red_tulip": [
+        "/fill ~-15 ~-1 ~4 ~15 ~-1 ~4 minecraft:dirt",
+        "/fill ~-15 ~ ~4 ~15 ~ ~4 minecraft:red_tulip"
+    ],
+    "orange_tulip": [
+        "/fill ~-15 ~-1 ~4 ~15 ~-1 ~4 minecraft:dirt",
+        "/fill ~-15 ~ ~4 ~15 ~ ~4 minecraft:orange_tulip"
+    ]
+}

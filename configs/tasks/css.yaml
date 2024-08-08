@@ -1,0 +1,17 @@
+default:
+  module: "src.server.tasks.css_agent.CSSAgent"
+  parameters:
+    round: 10
+    instruction: true
+    gold_selector: false
+
+# css-dev:
+#   parameters:
+#     name: "CSS-dev"
+#     data_dir: "ddata/css_dataset"
+
+css-std:
+  parameters:
+    name: "CSS-std"
+    data_dir: "data/css_dataset"
+    output_dir: "outputs/css_test"
