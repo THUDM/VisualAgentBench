@@ -59,4 +59,10 @@ This project is heavily built upon the following repositories (to be updated):
 ## Citation
 
 ```
+@article{liu2024visualagentbench,
+  title={VisualAgentBench: Towards Large Multimodal Models as Visual Foundation Agents},
+  author={Liu, Xiao and Zhang, Tianjie and Gu, Yu and Iong, Iat Long and Xu, Yifan and Song, Xixuan and Zhang, Shudan and Lai, Hanyu and Liu, Xinyi and Zhao, Hanlin and others},
+  journal={arXiv preprint arXiv:2408.06327},
+  year={2024}
+}
 ```
