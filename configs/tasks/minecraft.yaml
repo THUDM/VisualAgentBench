@@ -31,3 +31,4 @@ minecraft-std:
       "7": 2
     data_dir: "data/minecraft"
     output_dir: "outputs/minecraft"
+    docker_image: "tianjiezhang/vab_minecraft:latest"

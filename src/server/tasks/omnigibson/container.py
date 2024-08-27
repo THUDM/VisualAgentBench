@@ -23,6 +23,7 @@ class Container():
     vab_source_dir = ""
     modified_omnigibson_src = ""
     max_round = 100
+    docker_image = ""
 
     def use_port(self):
         time.sleep(random.random())
@@ -146,7 +147,7 @@ class Container():
             "OMNIGIBSON_HEADLESS": "1"
         }
         self.container = self.client.containers.run(
-            "vab-omnigibson:latest",
+            self.docker_image,
             f"python main.py --task {task[0]} --scene {task[1]} --port {self.port} --max_round {self.max_round}",
             environment=environment,
             volumes=volumes,
@@ -164,6 +165,9 @@ class Container():
 
     async def execute(self, session):
         while True:
+            self.container.reload()
+            if self.container.status == "exited":
+                return TaskSampleExecutionResult(status=SampleStatus.TASK_ERROR)
             try:
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 s.connect(("localhost", self.port))
@@ -219,7 +223,7 @@ class Container():
                 ]
             }
         )
-        print(text_prompt)
+        # print(text_prompt)
         message = await session.action()
         print(message)
         if message.status == AgentOutputStatus.AGENT_CONTEXT_LIMIT:
@@ -252,7 +256,8 @@ class Container():
     def close(self):
         try:
             time.sleep(4)
-            self.container.stop(timeout=24)
+            if not self.container.status == "exit":
+                self.container.stop(timeout=24)
         except:
             pass
         

@@ -1,6 +1,6 @@
 module: src.client.agents.HTTPAgent
 parameters:
-  url: https://one-api.glm.ai/v1/chat/completions  # https://api.openai.com/v1/chat/completions
+  url: https://api.openai.com/v1/chat/completions
   headers:
     Content-Type: application/json
     Authorization: Bearer 

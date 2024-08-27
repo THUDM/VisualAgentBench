@@ -196,7 +196,7 @@ class HTTPAgent(AgentClient):
 
     def inference(self, history: List[dict]) -> str:
         history = replace_image_url(history, keep_path=False, throw_details=False)
-        for _ in range(3):
+        for _ in range(5):
             try:
                 body = self.body.copy()
                 body.update(self._handle_history(history))

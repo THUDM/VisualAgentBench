@@ -15,6 +15,7 @@ class Container():
     data_dir = "data/minecraft"
     vab_source_dir = ""
     max_round = 100
+    docker_image = ""
 
     def use_port(self):
         time.sleep(random.random())
@@ -83,7 +84,7 @@ class Container():
             "PYTHONPYCACHEPREFIX": "/tmp"
         }
         self.container = self.client.containers.run(
-            "vab-minecraft:latest",
+            self.docker_image,
             f"xvfb-run -a python main.py --task_name {task} --port {self.port} --max_round {self.max_round}",
             environment=environment,
             volumes=volumes,
@@ -101,6 +102,9 @@ class Container():
 
     async def execute(self, session):
         while True:
+            self.container.reload()
+            if self.container.status == "exited":
+                return TaskSampleExecutionResult(status=SampleStatus.TASK_ERROR)
             try:
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 s.connect(("localhost", self.port))
@@ -207,7 +211,8 @@ class Container():
     def close(self):
         try:
             time.sleep(12)
-            self.container.stop(timeout=36)
+            if self.container.status != "exited":
+                self.container.stop(timeout=24)
         except:
             pass
         

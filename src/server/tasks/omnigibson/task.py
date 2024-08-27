@@ -7,7 +7,7 @@ import os
 import asyncio
 
 class OmniGibson(Task):
-    def __init__(self, available_ports, available_devices, data_dir, output_dir, max_round, **configs):
+    def __init__(self, available_ports, available_devices, data_dir, output_dir, max_round, docker_image, **configs):
         super().__init__(**configs)
         self.vab_source_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vab_omnigibson_src")
         modified_omnigibson_src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "modified_omnigibson_src")
@@ -30,6 +30,7 @@ class OmniGibson(Task):
         Container.max_round = max_round
         Container.vab_source_dir = self.vab_source_path
         Container.modified_omnigibson_src = modified_omnigibson_src
+        Container.docker_image = docker_image
         with open(f"{self.vab_source_path}/task/tasks.txt", "r") as f:
             tasks = f.read()
             self.tasks = eval(tasks)
@@ -41,14 +42,14 @@ class OmniGibson(Task):
         try:
             container = Container(self.tasks[index])
             session.clear()
-            session.inject({"role": "user", "content": SYSTEM_PROMPT})
+            session.inject({"role": "system", "content": SYSTEM_PROMPT})
             while True:
                 result = await container.execute(session)
                 if result.status != SampleStatus.RUNNING:
                     return result
         except Exception as e:
             print(e)
-            return TaskSampleExecutionResult(status=SampleStatus.TASK_ERROR)
+            return TaskSampleExecutionResult(status=SampleStatus.TASK_ERROR, result={"error": e})
         finally:
             try:
                 container.close()
@@ -59,7 +60,7 @@ class OmniGibson(Task):
         average_reward = 0
         success_count = 0
         for result in results:
-            if result.result:
+            if isinstance(result.result, Dict) and "success" in result.result:
                 if result.result["success"]:
                     success_count += 1
                     average_reward += 1
@@ -69,6 +70,8 @@ class OmniGibson(Task):
                     reward = (final_reward - initial_reward) / (1.0 - initial_reward)
                     average_reward += max(0, reward)
         return {
+            "total_count": len(results),
+            "success_count": success_count,
             "success_rate": success_count / len(results),
             "average_reward": average_reward / len(results)
         }
@@ -76,11 +79,12 @@ class OmniGibson(Task):
 
 async def main():
     available_ports = [12000, 12001, 12002]
-    available_devices = {"0":1, "1":1, "2":1}
+    available_devices = {"9":1, "1":1, "2":1}
     data_dir = "data/omnigibson"
     output_dir = "outputs/omnigibson"
     max_round = 100
-    task = OmniGibson(available_ports=available_ports, available_devices=available_devices, max_round=max_round, data_dir=data_dir, output_dir=output_dir, name="OmniGibson-std")
+    docker_image = "vab_omnigibson:latest"
+    task = OmniGibson(available_ports=available_ports, available_devices=available_devices, max_round=max_round, data_dir=data_dir, output_dir=output_dir, docker_image=docker_image, name="OmniGibson-std")
     print(Container.available_devices)
     print(Container.available_ports)
     session = Session()

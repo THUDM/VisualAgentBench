@@ -2,7 +2,6 @@ from __future__ import annotations
 import os
 from functools import lru_cache
 
-from jarvis.steveI.path import OPENAI_CLIP_PATH
 
 # disable HuggingFace warning
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -17,7 +16,7 @@ def get_model_full_name(model_name):
     elif model_name in ["distilbert", "distilbert-base-uncased"]:
         model_full_name = "distilbert-base-uncased"
     elif model_name in ["clip", "openai/clip-vit-base-patch16"]:
-        model_full_name = OPENAI_CLIP_PATH
+        model_full_name = "openai/clip-vit-base-patch16"
     else:
         model_full_name = model_name
     return model_full_name

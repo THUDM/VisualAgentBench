@@ -41,6 +41,6 @@ class Assignment(BaseModel):
 
 
 class ChatHistoryItem(BaseModel):
-    role: Literal["user", "agent"]
+    role: Literal["user", "agent", "system"]
     # content: str
     content: Union[str, List[Dict]]
