@@ -1,0 +1,9 @@
+module: "src.client.agents.HTTPAgent"
+parameters:
+  prompter:
+    name: "prompt_string"
+    args:
+      suffix: "<|assistant|>\n"
+      agent_format: "<|assistant|>\n{content}\n\n"
+      text_context_limit: 9776
+  return_format: "{response[response]}"
