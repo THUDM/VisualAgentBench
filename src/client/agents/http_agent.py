@@ -254,7 +254,7 @@ class HTTPAgent(AgentClient):
             history = replace_image_url(history, keep_path=False, throw_details=False)
         else:
             history = replace_image_url(history, keep_path=True, throw_details=True)
-        for _ in range(5):
+        for _ in range(10):
             try:
                 if self.prompter_type == "role_content_dict":
                     body = self.body.copy()
@@ -288,5 +288,5 @@ class HTTPAgent(AgentClient):
             else:
                 resp = resp.json()
                 return self.return_format.format(response=resp)
-            time.sleep(_ + 2)
+            time.sleep(_ + 1)
         raise Exception("Failed.")

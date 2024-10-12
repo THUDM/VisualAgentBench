@@ -29,7 +29,7 @@ Compared to its predecessor [AgentBench](https://github.com/THUDM/AgentBench), V
 -   [Dataset Summary](#dataset-summary)
 -   [Leaderboard](#leaderboard)
 -   [Quick Start](#quick-start)
--   [Next Steps](#next-steps)
+-   [Acknowledgement](#acknowledgement)
 -   [Citation](#citation)
 
 ## Dataset Summary
@@ -45,7 +45,77 @@ Here is the scores on test set results of VAB. All metrics are task Success Rate
 ![](./assets/leaderboard.png)
 
 ## Quick Start
-TODO
+
+This section will guide you on how to use `gpt-4o-2024-05-13` as an agent to launch 4 concurrent `VAB-Minecraft` tasks.
+For the specific framework structure, please refer to AgentBench's [Framework Introduction](https://github.com/THUDM/AgentBench/blob/main/docs/Introduction_en.md).
+For more detailed configuration and launch methods, please check [Configuration Guide](docs/Config_en.md)
+and [Program Entrance Guide](docs/Entrance_en.md).
+
+### Step 1. Prerequisites
+
+Clone this repo and install the dependencies.
+
+```bash
+cd VisualAgentBench
+conda create -n vab python=3.9
+conda activate vab
+pip install -r requirements.txt
+```
+
+Ensure that [Docker](https://www.docker.com/) is properly installed.
+
+```bash
+docker ps
+```
+
+For specific environments, please refer to their respective prerequisites: [VAB-OmniGibson](docs/README_setup.md#Setup-for-VAB-OmniGibson), [VAB-Minecraft](docs/README_setup.md#Setup-for-VAB-Minecraft), [VAB-CSS](docs/README_setup.md#Setup-for-VAB-CSS).
+
+### Step 2. Configure the Agent
+
+Fill in your OpenAI API Key at the correct location in `configs/agents/openai-chat.yaml`.
+
+You can try using `python -m src.client.agent_test` to check if your agent is configured correctly.
+
+
+### Step 3. Start the task server
+
+Starting the task worker involves specific tasks. Manual starting might be cumbersome; hence, we provide an automated script.
+
+The assumption for this step is that ports from 5000 to 5015 are available. For Mac OS system, you may want to follow [here](https://stackoverflow.com/questions/69955686/why-cant-i-run-the-project-on-port-5000) to free port 5000 to use.
+
+```bash
+python -m src.start_task -a
+```
+
+This will launch 4 task_workers for `VAB-Minecraft` tasks and automatically connect them to the controller on port 5000. **After executing this command, please allow approximately 1 minute for the task setup to complete.** If the terminal shows ".... 200 OK", you can open another terminal and follow step 4.
+
+### Step 4. Start the assigner
+
+This step is to actually start the tasks.
+
+If everything is correctly configured so far, you can now initiate the task tests.
+
+```bash
+python -m src.assigner --auto-retry
+```
+
+### Next Steps
+
+If you wish to launch more tasks or use other models, you can refer to the content in [Configuration Guide](docs/Config_en.md) and [Program Entrance Guide](docs/Entrance_en.md).
+
+For instance, if you want to launch VAB-OmniGibson tasks, in step 3:
+
+```bash
+python -m src.start_task -a -s omnigibson 2
+```
+
+In step 4: 
+
+```bash
+python -m src.assigner --auto-retry --config configs/assignments/omnigibson.yaml
+```
+
+You can modify the config files to launch other tasks or change task concurrency.
 
 ## Acknowledgement
 This project is heavily built upon the following repositories (to be updated):

@@ -2,9 +2,7 @@ import: definition.yaml
 
 concurrency:
   task:
-    # css: 5
-    # omnigibson: 4
-    minecraft: 4
+    omnigibson: 2
   agent:
     gpt-4o-2024-05-13: 4
 
@@ -12,11 +10,7 @@ assignments: # List[Assignment] | Assignment
   - agent: # "task": List[str] | str ,  "agent": List[str] | str
       - gpt-4o-2024-05-13
     task:
-      # - css
-      # - omnigibson
-      - minecraft
+      - omnigibson
 
 # output: "outputs/{TIMESTAMP}"
-# output: "outputs/css_test"
-# output: "outputs/omnigibson"
-output: "outputs/minecraft"
+output: "outputs/omnigibson"

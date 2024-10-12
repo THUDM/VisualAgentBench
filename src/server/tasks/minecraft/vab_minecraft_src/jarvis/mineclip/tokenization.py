@@ -2,7 +2,6 @@ from __future__ import annotations
 import os
 from functools import lru_cache
 
-
 # disable HuggingFace warning
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 

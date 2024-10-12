@@ -1,7 +1,7 @@
-minecraft-std:
+minecraft:
   module: "src.server.tasks.minecraft.Minecraft"
   parameters:
-    name: "Minecraft-std"
+    name: "Minecraft"
     max_round: 100
     available_ports:
       - 11000

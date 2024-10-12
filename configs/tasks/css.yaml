@@ -10,8 +10,8 @@ default:
 #     name: "CSS-dev"
 #     data_dir: "ddata/css_dataset"
 
-css-std:
+css:
   parameters:
-    name: "CSS-std"
+    name: "CSS"
     data_dir: "data/css_dataset"
     output_dir: "outputs/css_test"

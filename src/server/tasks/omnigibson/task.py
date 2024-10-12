@@ -84,7 +84,7 @@ async def main():
     output_dir = "outputs/omnigibson"
     max_round = 100
     docker_image = "vab_omnigibson:latest"
-    task = OmniGibson(available_ports=available_ports, available_devices=available_devices, max_round=max_round, data_dir=data_dir, output_dir=output_dir, docker_image=docker_image, name="OmniGibson-std")
+    task = OmniGibson(available_ports=available_ports, available_devices=available_devices, max_round=max_round, data_dir=data_dir, output_dir=output_dir, docker_image=docker_image, name="OmniGibson")
     print(Container.available_devices)
     print(Container.available_ports)
     session = Session()

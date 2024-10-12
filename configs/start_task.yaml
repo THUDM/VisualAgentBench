@@ -2,6 +2,6 @@ definition:
   import: tasks/task_assembly.yaml
 
 start:
-  # css-std: 1
-  # omnigibson-std: 4
-  minecraft-std: 4
+  # css: 1
+  # omnigibson: 2
+  minecraft: 4

@@ -1,7 +1,7 @@
-omnigibson-std:
+omnigibson:
   module: "src.server.tasks.omnigibson.OmniGibson"
   parameters:
-    name: "OmniGibson-std"
+    name: "OmniGibson"
     max_round: 100
     available_ports:
       - 12000

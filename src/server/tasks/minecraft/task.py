@@ -47,7 +47,8 @@ class Minecraft(Task):
                 if result.status != SampleStatus.RUNNING:
                     return result
         except Exception as e:
-            print(e)
+            import traceback
+            traceback.print_exc()
             return TaskSampleExecutionResult(status=SampleStatus.TASK_ERROR, result={"error": e})
         finally:
             try:
@@ -81,7 +82,7 @@ async def main():
     output_dir = "outputs/minecraft"
     max_round = 100
     docker_image = "tianjiezhang/vab_minecraft:latest"
-    task = Minecraft(available_ports=available_ports, available_devices=available_devices, max_round=max_round, data_dir=data_dir, output_dir=output_dir, docker_image=docker_image, name="Minecraft-std")
+    task = Minecraft(available_ports=available_ports, available_devices=available_devices, max_round=max_round, data_dir=data_dir, output_dir=output_dir, docker_image=docker_image, name="Minecraft")
     print(Container.available_devices)
     print(Container.available_ports)
     session = Session()
