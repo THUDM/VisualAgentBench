@@ -48,8 +48,10 @@ class OmniGibson(Task):
                 if result.status != SampleStatus.RUNNING:
                     return result
         except Exception as e:
-            print(e)
-            return TaskSampleExecutionResult(status=SampleStatus.TASK_ERROR, result={"error": e})
+            import traceback
+            error_info = traceback.format_exc()
+            print(error_info)
+            return TaskSampleExecutionResult(status=SampleStatus.TASK_ERROR, result={"error": error_info})
         finally:
             try:
                 container.close()
