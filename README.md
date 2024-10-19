@@ -26,32 +26,30 @@ Compared to its predecessor [AgentBench](https://github.com/THUDM/AgentBench), V
 
 ## Table of Contents
 
+-   [Quick Start](#quick-start)
 -   [Dataset Summary](#dataset-summary)
 -   [Leaderboard](#leaderboard)
 -   [Quick Start](#quick-start)
 -   [Acknowledgement](#acknowledgement)
 -   [Citation](#citation)
 
-## Dataset Summary
-
-We offer two splits for each dataset: Testing and Training. Different from its predecessor [AgentBench](https://github.com/THUDM/AgentBench), VAB is accompanied with a trajectory training set for behavior cloning (BC) training, which allows development of more potent visual foundation agents with emerging open LMMs.
-
-![](./assets/statistics.png)
-
-## Leaderboard
-
-Here is the scores on test set results of VAB. All metrics are task Success Rate (SR). Noted that proprietary LMMs are tested with mere **Prompting**, and open LMMs are tested after **Multitask Finetuning** on VAB training set, as they usually fail to follow complicated agent task instructions.
-
-![](./assets/leaderboard.png)
-
 ## Quick Start
 
-This section will guide you on how to use `gpt-4o-2024-05-13` as an agent to launch 4 concurrent `VAB-Minecraft` tasks.
-For the specific framework structure, please refer to AgentBench's [Framework Introduction](https://github.com/THUDM/AgentBench/blob/main/docs/Introduction_en.md).
+This section will first give you an overview to the use and architecture of VAB.
+Next, it will guide you on how to use `gpt-4o-2024-05-13` as an exemplar agent to launch 4 concurrent `VAB-Minecraft` tasks.
+
+### Overview on VAB Framework
+
+To allow fast evaluation over agent tasks, we leverage AgentBench's framework as the backbone (currently for VAB-OmniGibson, VAB-Minecraft, and VAB-CSS).
+If you are interested in its detailed implementation, please refer to AgentBench's [Framework Introduction](https://github.com/THUDM/AgentBench/blob/main/docs/Introduction_en.md) (which may not be necessary).
+Basically, the framework calls all LLM/LMM in API formats via `Agent-Controller`, and accesses to environments via `Task-Controller`.
+The `Assigner` will automatically assign evaluation tasks by pairing `Agent-Controller` and `Task-Controller` to optimize the overall evaluation speed.
 For more detailed configuration and launch methods, please check [Configuration Guide](docs/Config_en.md)
 and [Program Entrance Guide](docs/Entrance_en.md).
 
-### Step 1. Prerequisites
+![](./assets/framework.png)
+
+### Step 1. Prerequisites for All Environments
 
 Clone this repo and install the dependencies.
 
@@ -68,7 +66,14 @@ Ensure that [Docker](https://www.docker.com/) is properly installed.
 docker ps
 ```
 
-For specific environments, please refer to their respective prerequisites: [VAB-OmniGibson](docs/README_setup.md#Setup-for-VAB-OmniGibson), [VAB-Minecraft](docs/README_setup.md#Setup-for-VAB-Minecraft), [VAB-CSS](docs/README_setup.md#Setup-for-VAB-CSS).
+For specific environments, please refer to their additional prerequisites respectively.
+For VAB-WebArena-Lite, it is based on [WebArena](https://github.com/webarena-x/webarena) with some modifications, so please read its individual setup carefully.
+
+* [VAB-OmniGibson Setup](docs/detailed_setups/VAB-OmniGibson.md)
+* [VAB-Minecraft Setup](docs/detailed_setups/VAB-Minecraft.md)
+* VAB-Mobile: Ongoing
+* [VAB-WebArena-Lite Setup](VAB-WebArena-Lite/README.md) (Separate installation and evaluation method)
+* VAB-CSS: Ongoing
 
 ### Step 2. Configure the Agent
 
@@ -116,6 +121,19 @@ python -m src.assigner --auto-retry --config configs/assignments/omnigibson.yaml
 ```
 
 You can modify the config files to launch other tasks or change task concurrency.
+
+## Dataset Summary
+
+We offer two splits for each dataset: Testing and Training. Different from its predecessor [AgentBench](https://github.com/THUDM/AgentBench), VAB is accompanied with a trajectory training set for behavior cloning (BC) training, which allows development of more potent visual foundation agents with emerging open LMMs.
+
+![](./assets/statistics.png)
+
+## Leaderboard
+
+Here is the scores on test set results of VAB. All metrics are task Success Rate (SR). Noted that proprietary LMMs are tested with mere **Prompting**, and open LMMs are tested after **Multitask Finetuning** on VAB training set, as they usually fail to follow complicated agent task instructions.
+
+![](./assets/leaderboard.png)
+
 
 ## Acknowledgement
 This project is heavily built upon the following repositories (to be updated):
