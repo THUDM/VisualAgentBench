@@ -72,7 +72,7 @@ For VAB-WebArena-Lite, it is based on [WebArena](https://github.com/webarena-x/w
 * [VAB-OmniGibson Setup](docs/detailed_setups/VAB-OmniGibson.md)
 * [VAB-Minecraft Setup](docs/detailed_setups/VAB-Minecraft.md)
 * VAB-Mobile: Ongoing
-* [VAB-WebArena-Lite Setup](VAB-WebArena-Lite/README.md) (Separate installation and evaluation method)
+* [VAB-WebArena-Lite Setup](VAB-WebArena-Lite) (Separate installation and evaluation method)
 * VAB-CSS: Ongoing
 
 ### Step 2. Configure the Agent

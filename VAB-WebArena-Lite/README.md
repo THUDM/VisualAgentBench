@@ -147,7 +147,7 @@ python score.py <your_result_dir>
 
 ### 👍 Run Parallel Agent For Evaluation (Recommended)
 
-To run the tests in parallel, you can first configure `wa_parallel_run.sh`, then run it. We default split the test set to 5 parallel-group for evaluation in VAB.
+To run the tests in parallel, you can first configure `wa_parallel_run.sh`, then run it. We default split the test set to 8 parallel-group for evaluation in VAB.
 
 ```bash
 # Remember to first launch a tmux session
