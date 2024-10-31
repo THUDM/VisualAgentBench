@@ -45,26 +45,33 @@ def main():
         subprocess.run(["wget", path, "-O", "data/omnigibson/datasets/omnigibson.key"])
     
     if not os.path.exists("data/omnigibson/datasets/og_dataset"):
-        print("\n")
-        print_user_agreement()
-        while (
-            input(
-                "Do you agree to the above terms for using OmniGibson dataset? [y/n]"
-            )
-            != "y"
-        ):
-            print("You need to agree to the terms for using OmniGibson dataset.")
-        subprocess.run(["wget", "https://storage.googleapis.com/gibson_scenes/og_dataset.tar.gz", "-O", "data/omnigibson/datasets/og_dataset.tar.gz"])
-        subprocess.run(["tar", "-xvf", "data/omnigibson/dataset/og_dataset.tar.gz", "-C", "data/omnigibson/dataset"])
+        if not os.path.exists("data/omnigibson/datasets/og_dataset.tar.gz"):
+            print("\n")
+            print_user_agreement()
+            while (
+                input(
+                    "Do you agree to the above terms for using OmniGibson dataset? [y/n]"
+                )
+                != "y"
+            ):
+                print("You need to agree to the terms for using OmniGibson dataset.")
+            subprocess.run(["wget", "https://storage.googleapis.com/gibson_scenes/og_dataset.tar.gz", "-O", "data/omnigibson/datasets/og_dataset.tar.gz"])
+        subprocess.run(["tar", "-xvf", "data/omnigibson/datasets/og_dataset.tar.gz", "-C", "data/omnigibson/datasets"])
+        if os.path.exists("data/omnigibson/datasets/og_dataset"):
+            subprocess.run(["rm", "data/omnigibson/datasets/og_dataset.tar.gz"])
     
     if not os.path.exists("data/omnigibson/datasets/assets"):
-        subprocess.run(["wget", "https://storage.googleapis.com/gibson_scenes/og_assets.tar.gz", "-O", "data/omnigibson/datasets/og_assets.tar.gz"])
-        subprocess.run(["tar", "-xvf", "data/omnigibson/dataset/og_assets.tar.gz", "-C", "data/omnigibson/dataset"])
+        if not os.path.exists("data/omnigibson/datasets/og_assets.tar.gz"):
+            subprocess.run(["wget", "https://storage.googleapis.com/gibson_scenes/og_assets.tar.gz", "-O", "data/omnigibson/datasets/og_assets.tar.gz"])
+        subprocess.run(["tar", "-xvf", "data/omnigibson/datasets/og_assets.tar.gz", "-C", "data/omnigibson/datasets"])
+        if os.path.exists("data/omnigibson/datasets/assets"):
+            subprocess.run(["rm", "data/omnigibson/datasets/og_assets.tar.gz"])
     
     if os.path.exists("data/omnigibson/datasets/og_dataset/scenes/Beechwood_0_int/json/Beechwood_0_int_best.json"):
         subprocess.run(["rm", "-rf", "data/omnigibson/datasets/og_dataset/scenes/*"])
         subprocess.run(["mv", "data/omnigibson/vab_omnigibson_scenes/*", "data/omnigibson/datasets/og_dataset/scenes/"])
 
+    print("\n")
     print_omniverse_agreement()
 
 
