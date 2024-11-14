@@ -21,6 +21,8 @@ APIInput = str | list[Any] | dict[str, Any]
 def call_llm(
     lm_config: lm_config.LMConfig,
     prompt: APIInput,
+    api_key = None,
+    base_url = None
 ) -> str:
     response: str
     if lm_config.provider == "openai":
@@ -39,11 +41,13 @@ def call_llm(
             assert isinstance(prompt, str)
             response = generate_from_openai_completion(
                 prompt=prompt,
-                engine=lm_config.model,
+                model=lm_config.model,
                 temperature=lm_config.gen_config["temperature"],
                 max_tokens=lm_config.gen_config["max_tokens"],
                 top_p=lm_config.gen_config["top_p"],
                 stop_token=lm_config.gen_config["stop_token"],
+                api_key=api_key,
+                base_url=base_url
             )
         else:
             raise ValueError(

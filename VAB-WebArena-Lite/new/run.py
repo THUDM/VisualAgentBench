@@ -13,11 +13,13 @@ import tempfile
 import time
 from pathlib import Path
 from typing import List
+import cv2
+import shutil
 
 import openai
 import requests
 import torch
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 
 from agent import (
     PromptAgent,
@@ -62,6 +64,34 @@ formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 console_handler.setFormatter(formatter)
 file_handler.setFormatter(formatter)
 
+def text_wrap(text, font, max_width):
+    lines = []
+    paragraphs = text.split('\n')  # 按照 \n 分割文本为段落
+    for paragraph in paragraphs:
+        words = paragraph.split(' ')
+        line = ''
+        for word in words:
+            # 临时行
+            test_line = f"{line} {word}".strip()
+            # 获取临时行的宽度
+            test_line_bbox = font.getbbox(test_line)
+            test_line_width = test_line_bbox[2] - test_line_bbox[0]
+            if test_line_width <= max_width:
+                # 如果临时行的宽度不超过图片宽度，继续添加单词
+                line = test_line
+            else:
+                # 如果超过了最大宽度，保存当前行，开始新的一行
+                lines.append(line)
+                line = word
+        # 添加每段的最后一行
+        if line:
+            lines.append(line)
+        # 每个段落后添加一个空行，以保留段落的换行
+        lines.append('')
+    # 移除最后一个空行（不需要额外的空行）
+    if lines[-1] == '':
+        lines.pop()
+    return lines
 
 def config() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -88,6 +118,7 @@ def config() -> argparse.Namespace:
             "html",
             "image",
             "image_som",
+            "webrl",
         ],
         default="accessibility_tree",
         help="Observation type",
@@ -176,6 +207,9 @@ def config() -> argparse.Namespace:
 
     # logging related
     parser.add_argument("--result_dir", type=str, default="")
+    
+    # if use self-deployed model
+    parser.add_argument("--planner_ip", type=str, default=None)
     args = parser.parse_args()
 
     # check the whether the action space is compatible with the observation space
@@ -196,7 +230,7 @@ def config() -> argparse.Namespace:
 
 
 def early_stop(
-    trajectory: Trajectory, max_steps: int, thresholds: dict[str, int]
+    trajectory: Trajectory, max_steps: int, thresholds: dict[str, int], actions=None
 ) -> tuple[bool, str]:
     """Check whether need to stop early"""
 
@@ -228,28 +262,38 @@ def early_stop(
     if len(action_seq) == 0:
         return False, ""
 
-    last_action: Action = action_seq[-1]
+    if actions is None:
+        last_action: Action = action_seq[-1]
+        if last_action["action_type"] != ActionTypes.TYPE:
+            if len(last_k_actions) >= k:
+                if all(
+                    [
+                        is_equivalent(action, last_action)
+                        for action in last_k_actions
+                    ]
+                ):
+                    return True, f"Same action for {k} times"
+        else:
+            # check the action sequence
+            if (
+                sum([is_equivalent(action, last_action) for action in action_seq])
+                >= k
+            ):
+                return True, f"Same typing action for {k} times"
+        return False, ""
 
-    if last_action["action_type"] != ActionTypes.TYPE:
+    else:
+        last_k_actions = actions[-k:]
+        last_action = actions[-1]
         if len(last_k_actions) >= k:
             if all(
                 [
-                    is_equivalent(action, last_action)
+                    action == last_action
                     for action in last_k_actions
                 ]
             ):
                 return True, f"Same action for {k} times"
-
-    else:
-        # check the action sequence
-        if (
-            sum([is_equivalent(action, last_action) for action in action_seq])
-            >= k
-        ):
-            return True, f"Same typing action for {k} times"
-
-    return False, ""
-
+        return False, ""
 
 def update_action_history(path: str, task_id: int, actions: List[str], score: float=-0.1):    
     obj = {
@@ -387,18 +431,22 @@ def test(
             obs, info = env.reset(options={"config_file": config_file})
             state_info: StateInfo = {"observation": obs, "info": info}
             trajectory.append(state_info)
-
             meta_data = {"action_history": ["None"]}
             out_path = os.path.join(args.result_dir, "actions", f"{task_id}.json")
             actions = []
             
+            os.makedirs(os.path.join(args.result_dir, 'screehshots'), exist_ok=True)
+            if os.path.exists(os.path.join(args.result_dir, 'screehshots', f"{task_id}")):
+                shutil.rmtree(os.path.join(args.result_dir, 'screehshots', f"{task_id}"))
+            os.makedirs(os.path.join(args.result_dir, 'screehshots', f"{task_id}"))
+            
             while True:
                 update_action_history(out_path, task_id, actions=actions)
-                
+                # If no actions variable is passed, the behavior of early_stop is the same as the original one.
                 early_stop_flag, stop_info = early_stop(
-                    trajectory, max_steps, early_stop_thresholds
+                    trajectory, max_steps, early_stop_thresholds, actions
                 )
-
+                
                 if early_stop_flag:
                     action = create_stop_action(f"Early stop: {stop_info}")
                 else:
@@ -407,14 +455,14 @@ def test(
                             trajectory,
                             intent,
                             images=images,
-                            meta_data=meta_data,
+                            meta_data=meta_data
                         )
                     except ValueError as e:
                         # get the error message
                         action = create_stop_action(f"ERROR: {str(e)}")
-
+                
                 trajectory.append(action)
-
+                
                 action_str = get_action_description(
                     action,
                     state_info["info"]["observation_metadata"],
@@ -426,13 +474,29 @@ def test(
                 render_helper.render(
                     action, state_info, meta_data, args.render_screenshot
                 )
+                
+                current_screenshot = os.path.join(args.result_dir, 'screehshots', f"{task_id}", f"{len(actions)}.png")
+                _ = env.page.viewport_size
+                env.page.screenshot(path="/dev/null")
+                env.page.screenshot(path=current_screenshot)
+                element_id = action["element_id"]
+                if element_id != "":
+                    element = env.page.query_selector(f"[data-label-id='{element_id}']")
+                    if element:
+                        bbox = element.bounding_box()
+                        bbox = [int(bbox['x']), int(bbox['y']), int(bbox['width']),int(bbox['height'])]
+                        image = cv2.imread(current_screenshot)
+                        cv2.rectangle(image, (bbox[0], bbox[1]), (bbox[0] + bbox[2], bbox[1] + bbox[3]), (0, 255, 0), 2)
+                        cv2.circle(image, (int(bbox[0] + bbox[2] / 2), int(bbox[1] + bbox[3] / 2)), radius=0, color=(0, 255, 0), thickness=2)
+                        cv2.imwrite(current_screenshot, image)
+                
                 meta_data["action_history"].append(action_str)
                 actions.append(action_str)
-                print(action_str)
+                print('Action String: ', action_str)
 
                 if action["action_type"] == ActionTypes.STOP:
                     break
-
+                
                 obs, _, terminated, _, info = env.step(action)
                 state_info = {"observation": obs, "info": info}
                 trajectory.append(state_info)
@@ -540,7 +604,7 @@ if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
     args = config()
-    args.sleep_after_execution = 2.5
+    args.sleep_after_execution = 3.0
     prepare(args)
 
     test_config_base_dir = args.test_config_base_dir

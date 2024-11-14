@@ -499,3 +499,119 @@ class MultimodalCoTPromptConstructor(CoTPromptConstructor):
             raise NotImplementedError(
                 f"Provider {self.lm_config.provider} not implemented"
             )
+
+class WebRLPromptConstructor(PromptConstructor):
+    """The agent will direct predict the action"""
+
+    def __init__(
+        self,
+        instruction_path: str | Path,
+        lm_config: lm_config.LMConfig,
+        tokenizer: Tokenizer,
+    ):
+        super().__init__(instruction_path, lm_config, tokenizer)
+
+    def construct(
+        self,
+        trajectory: Trajectory,
+        intent: str,
+        meta_data: dict[str, Any] = {},
+    ) -> APIInput:
+        """Construct prompt given the trajectory"""
+        state_info: StateInfo = trajectory[-1]  # type: ignore[assignment]
+
+        obs = state_info["observation"][self.obs_modality]
+        max_obs_length = self.lm_config.gen_config["max_obs_length"]
+        if max_obs_length:
+            if self.lm_config.provider == "google":
+                print("NOTE: This is a Gemini model, so we use characters instead of tokens for max_obs_length.")
+                obs = obs[:max_obs_length]
+            else:
+                try:
+                    obs = self.tokenizer.decode(self.tokenizer.encode(obs)[:max_obs_length])  # type: ignore[arg-type]
+                except:
+                    print("NOTE: There is no available tokenizer, so we use characters instead of tokens for max_obs_length.")
+                    obs = obs[:max_obs_length]
+
+        turn_num = len(meta_data["action_history"])
+        if turn_num == 1:
+            previous_action_str = []
+        else:
+            previous_action_str = meta_data["action_history"][1:]
+        
+        index = turn_num - 1
+        history = ""
+        for i in range(index - 1, -1, -1):
+            if i == 0:
+                history = f"Round {i}\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n{intent}\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n{previous_action_str[i]}\n\n" + history
+            else:
+                history = f"Round {i}\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n** Simplified html **\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n{previous_action_str[i]}\n\n" + history
+        if len(history) + len(obs) > (16384 - 512):
+            obs = obs[:(16384 - 512)-len(history)]
+        current_turn = f"Round {index}\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n{obs}\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n"
+        prompt = f"Task Instruction: {intent}\n\n{history}{current_turn}"
+
+        return prompt
+
+    def extract_action(self, response: str) -> str:
+        return response
+    
+class WebRLChatPromptConstructor(PromptConstructor):
+    """The agent will direct predict the action"""
+
+    def __init__(
+        self,
+        instruction_path: str | Path,
+        lm_config: lm_config.LMConfig,
+        tokenizer: Tokenizer,
+    ):
+        super().__init__(instruction_path, lm_config, tokenizer)
+
+    def construct(
+        self,
+        trajectory: Trajectory,
+        intent: str,
+        meta_data: dict[str, Any] = {},
+    ) -> APIInput:
+        """Construct prompt given the trajectory"""
+        state_info: StateInfo = trajectory[-1]  # type: ignore[assignment]
+
+        obs = state_info["observation"][self.obs_modality]
+        max_obs_length = self.lm_config.gen_config["max_obs_length"]
+        if max_obs_length:
+            if self.lm_config.provider == "google":
+                print("NOTE: This is a Gemini model, so we use characters instead of tokens for max_obs_length.")
+                obs = obs[:max_obs_length]
+            else:
+                try:
+                    obs = self.tokenizer.decode(self.tokenizer.encode(obs)[:max_obs_length])  # type: ignore[arg-type]
+                except:
+                    print("NOTE: There is no available tokenizer, so we use characters instead of tokens for max_obs_length.")
+                    obs = obs[:max_obs_length]
+
+        turn_num = len(meta_data["action_history"])
+        if turn_num == 1:
+            previous_action_str = []
+        else:
+            previous_action_str = meta_data["action_history"][1:]
+            
+        index = turn_num - 1
+        conversations = []
+        for i in range(index - 1, -1, -1):
+            if i == 0:
+                content_user = f"Task Instruction: {intent}\n\nRound {i}\n{intent}"
+                content_assistant = f"{previous_action_str[i]}"
+            else:
+                content_user = f"Round {i}\n** Simplified html **"
+                content_assistant = f"{previous_action_str[i]}"
+            conversation = [{'role': 'user', 'content': content_user}, {'role': 'assistant', 'content': content_assistant}]
+            conversations = conversation + conversations
+            
+        system_turn = [{'role': 'system', 'content': self.instruction['intro']}]
+        current_turn = [{'role': 'user', 'content': f'Round {index}\n\n{obs}'}]
+        conversations = system_turn + conversations + current_turn
+
+        return conversations
+
+    def extract_action(self, response: str) -> str:
+        return response

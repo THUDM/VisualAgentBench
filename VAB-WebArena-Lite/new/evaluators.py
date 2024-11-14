@@ -172,6 +172,10 @@ class StringEvaluator(Evaluator):
         # prevent false positive (e.g, 0)
         if len(word_tokenize(clean_ref)) == 1:
             tok_pred = word_tokenize(clean_pred)
+            for token in tok_pred:
+                if '/' in token:
+                    sub_tokens = token.split('/')
+                    tok_pred.extend(sub_tokens)
             return float(clean_ref in tok_pred)
         else:
             return float(clean_ref in clean_pred)

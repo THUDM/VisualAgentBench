@@ -36,7 +36,6 @@ def retry_with_exponential_backoff(  # type: ignore
         # Initialize variables
         num_retries = 0
         delay = initial_delay
-
         # Loop until a successful response or max_retries is hit or an exception is raised
         while True:
             try:
@@ -142,27 +141,32 @@ async def agenerate_from_openai_completion(
 @retry_with_exponential_backoff
 def generate_from_openai_completion(
     prompt: str,
-    engine: str,
+    model: str,
     temperature: float,
     max_tokens: int,
     top_p: float,
-    context_length: int,
     stop_token: str | None = None,
+    api_key: str | None = None,
+    base_url: str | None = None
 ) -> str:
-    if "OPENAI_API_KEY" not in os.environ:
+    if "OPENAI_API_KEY" not in os.environ and api_key is None:
         raise ValueError(
             "OPENAI_API_KEY environment variable must be set when using OpenAI API."
         )
-
+    if api_key is not None:
+        client = OpenAI(api_key=api_key, base_url=base_url)
     response = client.completions.create(
         prompt=prompt,
-        engine=engine,
+        model=model,
         temperature=temperature,
         max_tokens=max_tokens,
         top_p=top_p,
         stop=[stop_token],
     )
-    answer: str = response["choices"][0]["text"]
+    try:
+        answer: str = response["choices"][0]["text"]
+    except:
+        answer: str = response.choices[0].text
     return answer
 
 
