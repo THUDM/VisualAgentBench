@@ -162,6 +162,75 @@ After all parallel groupes finish, run `score.py` to get the pass rate
 python score.py <your_result_dir>
 ```
 
+## 🚀 Evaluating in WebRL Setting (Text Modal)
+
+[WebRL](https://github.com/THUDM/WebRL) is one of the top-performing models on WebArena-Lite. It uses a plain text modality as input. Additionally, we provide evaluation scripts that support this plain text modality.
+
+### Evaluation of Finetuned Models
+
+To run the finetuned model in WebRL setting,  you can run evaluation with the following flags:
+
+```bash
+python run.py \
+  --instruction_path agent/prompts/jsons/p_webrl.json \
+  --test_start_idx 0 \
+  --test_end_idx 1 \
+  --result_dir <your_result_dir> \
+  --test_config_base_dir config_files/wa/test_webarena_lite \
+  --provider openai \
+  --mode completion \
+  --model <your_deployed_model_name> \
+  --planner_ip <your_deployed_model_ip> \
+  --stop_token "<|eot_id|>" \
+  --max_obs_length 0 \
+  --max_tokens 2048 \
+  --viewport_width 1280 \
+  --viewport_height 720 \
+  --action_set_tag webrl_id  --observation_type webrl
+```
+
+You need to first use tools like vllm to deploy the finetuned model locally. Once deployed, the model can be accessed through the OpenAI API call method. 
+
+Ensure that the `--model` and `--planner_ip` fields are completed with the appropriate model name and the IP address of the deployed model instance.
+
+We also provide the parallel script.
+
+```bash
+# Remember to first launch a tmux session
+tmux
+bash wa_parallel_run_webrl.sh
+```
+
+### Evaluation of Proprietary Models
+
+To run the proprietary model in WebRL setting,  you can run evaluation with the following flags:
+
+```bash
+python run.py \
+  --instruction_path agent/prompts/jsons/p_webrl_chat.json \
+  --test_start_idx 0 \
+  --test_end_idx 1 \
+  --result_dir <your_result_dir> \
+  --test_config_base_dir config_files/wa/test_webarena_lite \
+  --provider openai \
+  --model GPT-4o \
+  --mode chat \
+  --planner_ip '' \
+  --max_obs_length 0 \
+  --max_tokens 2048 \
+  --viewport_width 1280 \
+  --viewport_height 720 \
+  --action_set_tag webrl_id  --observation_type webrl
+```
+
+You can switch the evaluation model by modifying `--model`. We also provide the parallel script.
+
+```bash
+# Remember to first launch a tmux session
+tmux
+bash wa_parallel_run_webrl_chat.sh
+```
+
 ### 🚨 Important: Refresh all websites before re-run another round of testing!
 Since tasks in WebArena may involve changing status and database of websites (e.g., posting comments on Reddit), if websites are not all refreshed before another round of evaluation, the results would be problematic.
 
