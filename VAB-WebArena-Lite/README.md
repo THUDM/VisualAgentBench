@@ -111,6 +111,19 @@ gcloud auth login
 gcloud config set project <your_project_name>
 ```
 
+## 🚨 Important: Refresh all websites before re-run another round of testing!
+Since tasks in WebArena may involve changing status and database of websites (e.g., posting comments on Reddit), if websites are not all refreshed before another round of evaluation, the results would be problematic.
+
+Please remember to always run following command (assume you are hosting WebArena websites on your own) to restart and refresh all website dockers to avoid potential contamination.
+The process usually takes 3-5 minites.
+
+```bash
+# Make sure the script is executed on the machine that you run those website dockers
+bash refresh_website_docker.sh
+```
+
+You may need to change some contents in the script (e.g. configured ports of websites, names of dockers, etc.).
+
 ## 🖼️ Evaluating in VAB Standard Setting with SoM (Set-of-Marks) Visual Agents
 
 ### 👎 Run Single Agent For Evalution (Slow, but please read to understand meaning of arguments)
@@ -231,18 +244,6 @@ tmux
 bash wa_parallel_run_webrl_chat.sh
 ```
 
-## 🚨 Important: Refresh all websites before re-run another round of testing!
-Since tasks in WebArena may involve changing status and database of websites (e.g., posting comments on Reddit), if websites are not all refreshed before another round of evaluation, the results would be problematic.
-
-Please remember to run following command (assume you are hosting WebArena websites on your own) to restart and refresh all website dockers to avoid potential contamination.
-The process usually takes 3-5 minites.
-
-```bash
-# Make sure the script is executed on the machine that you run those website dockers
-bash refresh_website_docker.sh
-```
-
-You may need to change some contents in the script (e.g. configured ports of websites, names of dockers, etc.).
 
 ## Run Visualized Demostration
 Original WebArena have also prepared a demo for you to run the agents on your own task on an arbitrary webpage. An example is shown above where the agent is tasked to find the best Thai restaurant in Pittsburgh.
