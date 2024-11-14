@@ -231,7 +231,7 @@ tmux
 bash wa_parallel_run_webrl_chat.sh
 ```
 
-### 🚨 Important: Refresh all websites before re-run another round of testing!
+## 🚨 Important: Refresh all websites before re-run another round of testing!
 Since tasks in WebArena may involve changing status and database of websites (e.g., posting comments on Reddit), if websites are not all refreshed before another round of evaluation, the results would be problematic.
 
 Please remember to run following command (assume you are hosting WebArena websites on your own) to restart and refresh all website dockers to avoid potential contamination.
