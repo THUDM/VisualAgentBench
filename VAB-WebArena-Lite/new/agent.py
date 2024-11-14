@@ -14,6 +14,7 @@ from browser_env.actions import (
     create_id_based_action,
     create_none_action,
     create_playwright_action,
+    create_webrl_id_based_action
 )
 from browser_env.utils import Observation, StateInfo
 from llms import (
@@ -108,13 +109,15 @@ class PromptAgent(Agent):
         lm_config: lm_config.LMConfig,
         prompt_constructor: PromptConstructor,
         captioning_fn = None,
+        planner_ip = None
     ) -> None:
         super().__init__()
         self.lm_config = lm_config
         self.prompt_constructor = prompt_constructor
         self.action_set_tag = action_set_tag
         self.captioning_fn = captioning_fn
-
+        self.planner_ip = planner_ip
+        
         # Check if the model is multimodal.
         if ("gemini" in lm_config.model or "gpt-4" in lm_config.model and "vision" in lm_config.model or lm_config.provider in ["api", "finetune"]) and type(prompt_constructor) == MultimodalCoTPromptConstructor:
             self.multimodal_inputs = True
@@ -165,7 +168,10 @@ class PromptAgent(Agent):
         lm_config = self.lm_config
         n = 0
         while True:
-            response = call_llm(lm_config, prompt)
+            if self.planner_ip is not None and self.planner_ip != "":
+                response = call_llm(lm_config, prompt, 'EMPTY', self.planner_ip)
+            else:
+                response = call_llm(lm_config, prompt)
             force_prefix = self.prompt_constructor.instruction[
                 "meta_data"
             ].get("force_prefix", "")
@@ -183,6 +189,8 @@ class PromptAgent(Agent):
                     action = create_playwright_action(parsed_response)
                 elif self.action_set_tag == "som":
                     action = create_id_based_action(parsed_response)
+                elif self.action_set_tag == 'webrl_id':
+                    action = create_webrl_id_based_action(parsed_response)
                 else:
                     raise ValueError(
                         f"Unknown action type {self.action_set_tag}"
@@ -218,7 +226,8 @@ def construct_agent(args: argparse.Namespace, captioning_fn=None) -> Agent:
             action_set_tag=args.action_set_tag,
             lm_config=llm_config,
             prompt_constructor=prompt_constructor,
-            captioning_fn=captioning_fn
+            captioning_fn=captioning_fn,
+            planner_ip=args.planner_ip
         )
     else:
         raise NotImplementedError(

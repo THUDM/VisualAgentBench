@@ -187,7 +187,7 @@
                 "string_match"
             ],
             "reference_answers": {
-                "must_include": [
+                "fuzzy_match": [
                     "0"
                 ]
             },
@@ -774,8 +774,8 @@
                 "string_match"
             ],
             "reference_answers": {
-                "fuzzy_match": [
-                    "914km"
+                "must_include": [
+                    "914"
                 ]
             },
             "reference_url": "",
@@ -1139,7 +1139,7 @@
                 "string_match"
             ],
             "reference_answers": {
-                "must_include": [
+                "fuzzy_match": [
                     "0"
                 ]
             },
@@ -1679,7 +1679,7 @@
                 "string_match"
             ],
             "reference_answers": {
-                "exact_match": "N/A"
+                "fuzzy_match": ["N/A"]
             },
             "reference_url": "",
             "program_html": [],
@@ -2605,7 +2605,7 @@
                 "string_match"
             ],
             "reference_answers": {
-                "exact_match": "yjlou"
+                "must_include": "yjlou"
             },
             "reference_url": "",
             "program_html": [],
@@ -3712,7 +3712,7 @@
                 "string_match"
             ],
             "reference_answers": {
-                "exact_match": "N/A"
+                "fuzzy_match": "N/A"
             },
             "reference_url": "",
             "program_html": [],
