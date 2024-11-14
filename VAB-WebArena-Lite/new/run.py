@@ -489,27 +489,6 @@ def test(
                         cv2.rectangle(image, (bbox[0], bbox[1]), (bbox[0] + bbox[2], bbox[1] + bbox[3]), (0, 255, 0), 2)
                         cv2.circle(image, (int(bbox[0] + bbox[2] / 2), int(bbox[1] + bbox[3] / 2)), radius=0, color=(0, 255, 0), thickness=2)
                         cv2.imwrite(current_screenshot, image)
-                font_path = "/workspace/qzh/Arial.ttf"  # 使用FreeSans字体
-                font_size = 30  # 你可以调整这个值来增大或缩小字体
-                image = Image.open(current_screenshot)
-                font = ImageFont.truetype(font_path, font_size)
-                draw = ImageDraw.Draw(image)
-                image_width = image.width
-                wrapped_text = text_wrap(action_str, font, image_width)
-                line_height = font.getbbox('hg')[3] - font.getbbox('hg')[1]
-                text_height = line_height * len(wrapped_text)
-                new_image_height = image.height + text_height + 20  # 20 is extra white space
-                new_image = Image.new('RGB', (image.width, new_image_height), color=(255, 255, 255))  # white background
-                draw_new = ImageDraw.Draw(new_image)
-                y_text = 10  # Initial position of text from top
-                for line in wrapped_text:
-                    text_bbox = draw_new.textbbox((0, 0), line, font=font)
-                    text_width = text_bbox[2] - text_bbox[0]
-                    text_position = ((image_width - text_width) // 2, y_text)  # Center text horizontally
-                    draw_new.text(text_position, line, font=font, fill=(0, 0, 0))  # black text
-                    y_text += line_height  # move to next line
-                new_image.paste(image, (0, text_height + 20))
-                new_image.save(current_screenshot)
                 
                 meta_data["action_history"].append(action_str)
                 actions.append(action_str)
