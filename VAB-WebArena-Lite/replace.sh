@@ -15,6 +15,7 @@ cp -f new/run.py visualwebarena/run.py
 cp -f new/agent.py visualwebarena/agent/agent.py
 cp -f new/prompt_constructor.py visualwebarena/agent/prompts/prompt_constructor.py
 cp -f new/p_webrl.json visualwebarena/agent/prompts/jsons/p_webrl.json
+cp -f new/p_webrl_chat.json visualwebarena/agent/prompts/jsons/p_webrl_chat.json
 
 # browser_env
 cp -f new/actions.py visualwebarena/browser_env/actions.py
@@ -42,6 +43,7 @@ cp -f new/wa_parallel_run.sh visualwebarena/wa_parallel_run.sh
 
 cp -f new/score.py visualwebarena/score.py
 cp -f new/wa_parallel_run_webrl.sh visualwebarena/wa_parallel_run_webrl.sh
+cp -f new/wa_parallel_run_webrl_chat.sh visualwebarena/wa_parallel_run_webrl_chat.sh
 
 # 3. remove temporary files
 mv visualwebarena/* .

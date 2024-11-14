@@ -84,3 +84,28 @@ for src in file_list:
 if len(file_list) > 1:
     get_result(all_result)
 export_result(all_result, show_all=True)
+
+with open('./config_files/wa/test_webarena_lite.raw.json') as fp:
+    configs = json.load(fp)
+sub_results = {}
+sub_ids = {}
+for item in configs:
+    web = tuple(item['sites'])
+    task_id = int(item['task_id'])
+    old_task_id = int(item['old_task_id'])
+    if web not in sub_results:
+        sub_results[web] = []
+    if web not in sub_ids:
+        sub_ids[web] = []
+    if task_id in all_result:
+        sub_results[web].append(all_result[task_id])
+        if all_result[task_id] == 1:
+            sub_ids[web].append(old_task_id)
+    else:
+        sub_results[web].append(0)
+for web in sub_results:
+    print(web, round(sum(sub_results[web]) / len(sub_results[web]) * 100, 1))
+
+print('\n\n')
+for web in sub_ids:
+    print(web, sorted(sub_ids[web]), len(sub_ids[web]))
