@@ -179,6 +179,8 @@ python score.py <your_result_dir>
 
 [WebRL](https://github.com/THUDM/WebRL) is one of the top-performing models on WebArena-Lite. It uses a plain text modality as input. Additionally, we provide evaluation scripts that support this plain text modality.
 
+**Before running, remember to read and follow the above environmental setup procedures!**
+
 ### Evaluation of Finetuned Models
 
 To run the finetuned model in WebRL setting,  you can run evaluation with the following flags:
