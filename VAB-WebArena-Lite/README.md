@@ -283,9 +283,19 @@ This tasks the agent to find a shirt that looks like the provided image (the "Th
 
 ## Acknowledgements
 
-Our code is heavily based off the <a href="https://github.com/web-arena-x/webarena">WebArena codebase</a> and <a href="https://github.com/web-arena-x/visualwebarena">VisualWebArena codebase</a>.
+Please cite our paper if you find VAB-WebArena-Lite useful for your work:
 
-If you find this environment useful, please consider citing <a href="https://jykoh.com/vwa" target="_blank">VisualWebArena</a> as well as <a href="https://webarena.dev/" target="_blank">WebArena</a>:
+```bibtex
+@article{liu2024visualagentbench,
+  title={VisualAgentBench: Towards Large Multimodal Models as Visual Foundation Agents},
+  author={Liu, Xiao and Zhang, Tianjie and Gu, Yu and Iong, Iat Long and Xu, Yifan and Song, Xixuan and Zhang, Shudan and Lai, Hanyu and Liu, Xinyi and Zhao, Hanlin and others},
+  journal={arXiv preprint arXiv:2408.06327},
+  year={2024}
+}
+```
+
+Our code is heavily based off the <a href="https://github.com/web-arena-x/webarena">WebArena codebase</a> and <a href="https://github.com/web-arena-x/visualwebarena">VisualWebArena codebase</a>.
+If you find this environment useful, please also consider citing <a href="https://jykoh.com/vwa" target="_blank">VisualWebArena</a> as well as <a href="https://webarena.dev/" target="_blank">WebArena</a>:
 
 ```bibtex
 @article{koh2024visualwebarena,
