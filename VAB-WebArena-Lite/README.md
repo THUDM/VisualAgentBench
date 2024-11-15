@@ -1,5 +1,20 @@
 # Setup for VAB-WebArena-Lite
 
+## Table of Contents
+
+- [Brief Introduction](#brief-introduction)
+- [Install](#install)
+- [Setup WebArena-Lite Environments](#setup-webarena-lite-environments)
+- [🚨 Important: Refresh all websites before re-run another round of testing](#-important-refresh-all-websites-before-re-run-another-round-of-testing)
+- [🖼️ Evaluating in VAB Standard Setting with SoM (Set-of-Marks) Visual Agents](#️-evaluating-in-vab-standard-setting-with-som-set-of-marks-visual-agents)
+  - [👎 Run Single Agent For Evalution](#-run-single-agent-for-evalution-slow-but-please-read-to-understand-meaning-of-arguments)
+  - [👍 Run Parallel Agent For Evaluation](#-run-parallel-agent-for-evaluation-recommended)
+- [🚀 Evaluating in WebRL Setting (Text Modal)](#-evaluating-in-webrl-setting-text-modal)
+  - [Evaluation of Finetuned Models](#evaluation-of-finetuned-models)
+  - [Evaluation of Proprietary Models](#evaluation-of-proprietary-models)
+- [Run Visualized Demostration](#run-visualized-demostration)
+- [Acknowledgements](#acknowledgements)
+
 ## Brief Introduction
 
 VAB-WebArena-Lite is a 165-task refined subset from <a href="https://webarena.dev/" target="_blank">WebArena</a>.
