@@ -506,6 +506,28 @@ def test(
                     trajectory.append(create_stop_action(""))
                     break
 
+            # save trajectory
+            if args.observation_type == 'webrl':
+                current_path = os.path.join(args.result_dir, 'traces', f"{task_id}.jsonl")
+                traces = []
+                for i in range(1, len(trajectory), 2):
+                    action = trajectory[i]
+                    state_info = trajectory[i - 1]
+                    obs = state_info["observation"]['text']
+                    action_str = action['raw_prediction']
+                    item = {
+                        'trace_id': task_id,
+                        'index': i // 2,
+                        'prompt': intent if i == 1 else '** Simplified html **',
+                        'html': obs,
+                        'response': action_str,
+                        'target': intent 
+                    }
+                    traces.append(item)
+                with open(current_path, 'w') as f:
+                    for item in traces:
+                        f.write(json.dumps(item) + '\n')
+            
             # NOTE: eval_caption_image_fn is used for running eval_vqa functions.
             evaluator = evaluator_router(
                 config_file, captioning_fn=eval_caption_image_fn
