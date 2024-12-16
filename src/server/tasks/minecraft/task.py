@@ -78,7 +78,7 @@ class Minecraft(Task):
 
 async def main():
     available_ports = [11000, 11001, 11002]
-    available_devices = {"9":6, "1":6, "2":6}
+    available_devices = {"1":6, "2":6}
     data_dir = "data/minecraft"
     output_dir = "outputs/minecraft"
     max_round = 100

@@ -446,7 +446,6 @@ def toggle_on(robot, obj):
         return False, "Cannot toggle on! Object is not toggleable!"
     
     robot_pos = robot.get_position()
-    obj_pos = obj.get_position()
     dis = distance_to_cuboid(robot_pos, obj.aabb)
     if dis > delta:
         return False, f"Cannot toggle on! The object is not within reach of the robot!"
@@ -464,7 +463,6 @@ def toggle_off(robot, obj):
         return False, "Cannot toggle off! Object is not toggleable!"
     
     robot_pos = robot.get_position()
-    obj_pos = obj.get_position()
     dis = distance_to_cuboid(robot_pos, obj.aabb)
     if dis > delta:
         return False, f"Cannot toggle off! The object is not within reach of the robot!"

@@ -345,7 +345,7 @@ class Env(object):
                 if func == "move" and obj not in self.seen_objs and obj not in self.visible_objs and obj not in self.grasped_obj:
                     return False, f"Can not move to the object! Object {arg} hasn't seen by the robot."
                 if func == "move" and obj not in self.visible_objs and obj not in self.grasped_obj and \
-                    self.env.scene._seg_map.get_room_instance_by_point(obj.get_position()[:2]) != self.current_room:
+                    self.env.scene._seg_map.get_room_instance_by_point(obj.get_position()[:2]) != self.current_room and "None" not in self.current_room:
                     return False, f"Can not move to the object! Object {arg} isn't in the same room with the robot."
                 
                 arg_objs.append(obj)

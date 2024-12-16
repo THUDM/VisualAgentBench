@@ -32,7 +32,7 @@
             docker load -i VAB-OmniGibson-Docker/vab_omnigibson.tar
             ```
 
-4. Download datasets of OmniGibson, VAB-OmniGibson test activities, and related scene files. Note that about 25 GB data will be downloaded to `data/omnigibson`, and make sure you have access to google drive.
+4. Download datasets of OmniGibson, VAB-OmniGibson test activities, and related scene files. Note that about 25 GB data will be downloaded to `data/omnigibson`, and make sure you have access to google drive. During the download process, you will be prompted to accept the OmniGibson user agreement.
     
     ```bash
     python scripts/omnigibson_download.py

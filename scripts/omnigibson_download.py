@@ -68,8 +68,8 @@ def main():
             subprocess.run(["rm", "data/omnigibson/datasets/og_assets.tar.gz"])
     
     if os.path.exists("data/omnigibson/datasets/og_dataset/scenes/Beechwood_0_int/json/Beechwood_0_int_best.json"):
-        subprocess.run(["rm", "-rf", "data/omnigibson/datasets/og_dataset/scenes/*"])
-        subprocess.run(["mv", "data/omnigibson/vab_omnigibson_scenes/*", "data/omnigibson/datasets/og_dataset/scenes/"])
+        subprocess.run(["rm", "-rf", "data/omnigibson/datasets/og_dataset/scenes"])
+        subprocess.run(["cp", "-r", "data/omnigibson/vab_omnigibson_scenes", "data/omnigibson/datasets/og_dataset/scenes"])
 
     print("\n")
     print_omniverse_agreement()
