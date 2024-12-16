@@ -31,7 +31,7 @@ class Env(object):
         self.robot = self.env.robots[0]
         self.grasped_obj = []
         self.camera = self.robot.sensors['robot0:eyes_Camera_sensor']
-        self.camera.focal_length = 10.0
+        self.camera.focal_length = 4.8
 
         self.prim_path_to_obj = {}                  # obj.prim_path -> obj
 
@@ -525,10 +525,10 @@ class Env(object):
             self.camera.set_orientation(self.camera_orientations[self.camera_orientation_id])
             pos = self.robot.get_position()
             obj_pos = obj.get_position()
-            while cal_dis(pos[:2], obj_pos[:2]) > 1.8:
+            while distance_to_cuboid(pos[:2], (obj.aabb[0][:2], obj.aabb[1][:2])) > 1.1:
                 pos = 0.7 * pos + 0.3 * obj_pos
                 pos[2] = 0.004
-            while cal_dis(pos[:2], obj_pos[:2]) < 0.3 or (pos[0] >= obj.aabb[0][0] and pos[0] <= obj.aabb[1][0] and pos[1] >= obj.aabb[0][1] and pos[1] <= obj.aabb[1][1]):
+            while cal_dis(pos[:2], obj_pos[:2]) < 0.7 or (pos[0] >= obj.aabb[0][0] and pos[0] <= obj.aabb[1][0] and pos[1] >= obj.aabb[0][1] and pos[1] <= obj.aabb[1][1]):
                 pos = obj_pos + np.random.uniform(1.2, 1.5) * (pos - obj_pos)
                 pos[2] = 0.004
             return pos
@@ -538,16 +538,16 @@ class Env(object):
         closest_walls = sorted(walls, key=lambda x: distance_to_cuboid(obj_pos, x.aabb))[:2]
         pos = (np.clip(obj_pos, *closest_walls[0].aabb) + np.clip(obj_pos, *closest_walls[1].aabb)) / 2
         pos[2] = 0.004
-        if cal_dis(pos[:2], obj_pos[:2]) < 1:
+        if distance_to_cuboid(pos[:2], (obj.aabb[0][:2], obj.aabb[1][:2])) < 1:
             pos = obj_pos - np.random.uniform(1.4, 1.7) * (pos - obj_pos)
             pos[2] = 0.004
-        while cal_dis(pos[:2], obj_pos[:2]) < 1:
+        while distance_to_cuboid(pos[:2], (obj.aabb[0][:2], obj.aabb[1][:2])) < 1:
             pos = obj_pos + np.random.uniform(1.4, 1.6) * (pos - obj_pos)
             pos[2] = 0.004
-        while cal_dis(pos[:2], obj_pos[:2]) > 1.5:
+        while distance_to_cuboid(pos[:2], (obj.aabb[0][:2], obj.aabb[1][:2])) > 1.2:
             pos = obj_pos + np.random.uniform(0.85, 0.9) * (pos - obj_pos)
             pos[2] = 0.004
-        while distance_to_cuboid(pos, obj.aabb) < 0.3:
+        while distance_to_cuboid(pos[:2], (obj.aabb[0][:2], obj.aabb[1][:2])) < 0.7:
             pos = obj_pos + np.random.uniform(1.2, 1.5) * (pos - obj_pos)
             pos[2] = 0.004
         return pos
