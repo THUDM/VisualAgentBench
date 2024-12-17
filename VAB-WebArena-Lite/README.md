@@ -40,7 +40,7 @@ Then, you should substitute the file with the commands below:
 bash replace.sh
 ```
 
-After that, you should install the dependencies for VAB-WebArena-Lite (recommend using a independent conda environment to VAB):
+After that, you should install the dependencies for VAB-WebArena-Lite (recommend using an independent conda environment to VAB):
 
 ```bash
 # Python 3.10 (or 3.11, but not 3.12 cause 3.12 deprecated distutils needed here)
