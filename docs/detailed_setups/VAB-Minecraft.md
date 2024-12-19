@@ -40,7 +40,7 @@
 
 ## Get Started
 
-According to your hardware equipment, fill `available_ports` and `available_devices` in the task configuration file `configs/tasks/minecraft.yaml`.
+According to your hardware equipment, fill `available_ports` and `available_devices` in the task configuration file [configs/tasks/minecraft.yaml](../../configs/tasks/minecraft.yaml).
 
 - `available_ports`: Please fill in available ports in your machine. Each concurrent docker container requires 1 port for communication with the task server. Ensure that you provide enough ports to accommodate the expected concurrency.
 

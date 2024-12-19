@@ -42,7 +42,7 @@
 
 ## Get Started
 
-1. According to your hardware equipment, fill `available_ports` and `available_devices` in the task configuration file `configs/tasks/omnigibson.yaml`.
+1. According to your hardware equipment, fill `available_ports` and `available_devices` in the task configuration file [configs/tasks/omnigibson.yaml](../../configs/tasks/omnigibson.yaml).
 
     - `available_ports`: Please fill in available ports in your machine. Each concurrent docker container requires 1 port for communication with the task server. Ensure that you provide enough ports to accommodate the expected concurrency.
 
