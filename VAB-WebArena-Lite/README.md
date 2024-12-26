@@ -44,7 +44,7 @@ After that, you should install the dependencies for VAB-WebArena-Lite (recommend
 
 ```bash
 # Python 3.10 (or 3.11, but not 3.12 cause 3.12 deprecated distutils needed here)
-python -m wal wal
+python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 playwright install
