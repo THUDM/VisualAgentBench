@@ -73,7 +73,7 @@ For VAB-WebArena-Lite, it is based on [WebArena](https://github.com/webarena-x/w
 * [VAB-Minecraft Setup](docs/detailed_setups/VAB-Minecraft.md)
 * VAB-Mobile: Ongoing
 * [VAB-WebArena-Lite Setup](VAB-WebArena-Lite) (Separate installation and evaluation method)
-* VAB-CSS: Ongoing
+* [VAB-CSS]((docs/detailed_setups/VAB-CSS.md)
 
 ### Step 2. Configure the Agent
 
