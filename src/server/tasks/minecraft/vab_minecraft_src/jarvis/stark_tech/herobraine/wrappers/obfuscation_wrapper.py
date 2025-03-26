@@ -27,7 +27,7 @@ class Obfuscated(EnvWrapper):
         Args:
             env_to_wrap (Vectorized): The vectorized environment to wrap.
             obfuscator_dir (str, os.path.Path): The path to the obfuscator neural networks.
-            name (str, optional): A method to overide the name. Defaults to ''.
+            name (str, optional): A method to override the name. Defaults to ''.
         """
         self.obf_vector_len, \
         self.ac_enc, self.ac_dec, \
