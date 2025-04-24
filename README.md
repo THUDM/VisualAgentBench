@@ -3,7 +3,7 @@
 ![](./assets/cover.png)
 
 <p align="center">
-   <a href="" target="_blank">🌐 Website</a> | <a href="https://arxiv.org/abs/2408.06327" target="_blank">📃 Paper </a> | <a href="" target="_blank"> 🗂️ VAB Training (Under Construction)
+   <a href="" target="_blank">🌐 Website</a> | <a href="https://arxiv.org/abs/2408.06327" target="_blank">📃 Paper </a> | <a href="https://www.modelscope.cn/datasets/shawliu9/VAB-Training" target="_blank"> 🗂️ VAB Training (ModelScope)
 </p>
 
 # VisualAgentBench: Towards Large Multimodal Models as Visual Foundation Agents
